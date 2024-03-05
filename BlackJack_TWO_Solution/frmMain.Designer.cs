@@ -116,7 +116,7 @@
             this.mnuFile});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(1177, 28);
+            this.mnuMain.Size = new System.Drawing.Size(1177, 30);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -127,7 +127,7 @@
             this.mnuFileReset,
             this.mnuExit});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(46, 24);
+            this.mnuFile.Size = new System.Drawing.Size(46, 26);
             this.mnuFile.Text = "File";
             // 
             // mnuFileNew
@@ -147,6 +147,7 @@
             this.mnuExit.Name = "mnuExit";
             this.mnuExit.Size = new System.Drawing.Size(171, 26);
             this.mnuExit.Text = "Exit";
+            this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
             // pnlBlackJackField
             // 
@@ -160,9 +161,9 @@
             this.pnlBlackJackField.Controls.Add(this.btnHit);
             this.pnlBlackJackField.Controls.Add(this.pnlPlayerField);
             this.pnlBlackJackField.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 28);
+            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 30);
             this.pnlBlackJackField.Name = "pnlBlackJackField";
-            this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 607);
+            this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 605);
             this.pnlBlackJackField.TabIndex = 1;
             // 
             // btnNewMatch

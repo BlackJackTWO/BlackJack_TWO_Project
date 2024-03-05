@@ -16,5 +16,10 @@ namespace BlackJack_TWO_Solution
         {
             InitializeComponent();
         }
+
+        private void mnuExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
