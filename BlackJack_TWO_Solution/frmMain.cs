@@ -23,8 +23,8 @@ namespace BlackJack_TWO_Solution
         private int _score = 0;
         private int _PhandIndex;
         private int _DhandIndex;
-        private int Wins;
-        private int Loss;
+        private int _Wins;
+        private int _Loss;
 
         #endregion
 
@@ -34,6 +34,7 @@ namespace BlackJack_TWO_Solution
         }
 
         #region /*Game Start Up*/
+
         // Build game board layout at beginnign of the game
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -45,6 +46,10 @@ namespace BlackJack_TWO_Solution
             btnHit.Visible = false;
             btnStay.Visible = false;
 
+            pnlPlayerRound.BorderStyle = BorderStyle.Fixed3D;
+            pnlPlayerField.BorderStyle = BorderStyle.Fixed3D;
+            pnlDealerRound.BorderStyle = BorderStyle.Fixed3D;
+            pnlDealerField.BorderStyle = BorderStyle.Fixed3D;
 
             lblDealCardScoreTxt.Text = "0";
             lblPlayCardScoreTxt.Text = "0";
@@ -57,9 +62,11 @@ namespace BlackJack_TWO_Solution
             btnHit.Enabled = false;
             btnStay.Enabled = false;
         }
+
         #endregion
 
         #region /*Game Interactions*/
+
         //Builds new match on click of startup button
         private void btnNewMatch_Click(object sender, EventArgs e)
         {
@@ -168,16 +175,7 @@ namespace BlackJack_TWO_Solution
                 lblPlayerName.Text = "BUST!!";
                 lblPlayerName.ForeColor = Color.Red;
 
-                lblPDeclaration.Visible = true;
-                lblPDeclaration.Text = "LOSS";
-                lblPDeclaration.ForeColor = Color.Red;
-
-                lblDDeclaration.Visible = true;
-                lblDDeclaration.Text = "WIN";
-                lblDDeclaration.ForeColor = Color.Green;
-
-                Loss++;
-                lblDealRoundScr.Text = Loss.ToString(); //Add bust Lable to either field
+                Loss(_Loss);
             }
             
 
@@ -205,16 +203,7 @@ namespace BlackJack_TWO_Solution
                         btnHit.Enabled = false;
                         btnHit.BackColor = Color.DarkSlateGray;
 
-                        lblPDeclaration.Visible = true;
-                        lblPDeclaration.Text = "WIN";
-                        lblPDeclaration.ForeColor = Color.Green;
-
-                        lblDDeclaration.Visible = true;
-                        lblDDeclaration.Text = "LOSS";
-                        lblDDeclaration.ForeColor = Color.Red; ;
-
-                        Wins++;
-                        lblPlayRoundScr.Text = Wins.ToString();
+                        Win(_Wins);
                         return;
                     }
                     else if (int.Parse(lblPlayCardScoreTxt.Text) < 21 &&
@@ -225,16 +214,7 @@ namespace BlackJack_TWO_Solution
                         btnHit.Enabled = false;
                         btnHit.BackColor = Color.DarkSlateGray;
 
-                        lblPDeclaration.Visible = true;
-                        lblPDeclaration.Text = "WIN";
-                        lblPDeclaration.ForeColor = Color.Green;
-
-                        lblDDeclaration.Visible = true;
-                        lblDDeclaration.Text = "LOSS";
-                        lblDDeclaration.ForeColor = Color.Red;
-
-                        Wins++;
-                        lblPlayRoundScr.Text = Wins.ToString();
+                        Win(_Wins);
                         return;
                     }
                     else if (int.Parse(lblPlayCardScoreTxt.Text) < 21 &&
@@ -245,16 +225,7 @@ namespace BlackJack_TWO_Solution
                         btnHit.Enabled = false;
                         btnHit.BackColor = Color.DarkSlateGray;
 
-                        lblPDeclaration.Visible = true;
-                        lblPDeclaration.Text = "LOSS";
-                        lblPDeclaration.ForeColor = Color.Red;
-
-                        lblDDeclaration.Visible = true;
-                        lblDDeclaration.Text = "WIN";
-                        lblDDeclaration.ForeColor = Color.Green;
-
-                        Loss++;
-                        lblDealRoundScr.Text = Loss.ToString();
+                        Loss(_Loss);
                         return;
                     }
                     else if (lbxPHand.Items.Count == 5 &&
@@ -268,16 +239,8 @@ namespace BlackJack_TWO_Solution
                         btnStay.Enabled = false;
                         btnStay.BackColor = Color.DarkSlateGray;
 
-                        lblPDeclaration.Visible = true;
-                        lblPDeclaration.Text = "WIN";
-                        lblPDeclaration.ForeColor = Color.Green;
-
-                        lblDDeclaration.Visible = true;
-                        lblDDeclaration.Text = "LOSS";
-                        lblDDeclaration.ForeColor = Color.Red;
-
-                        Wins++;
-                        lblPlayRoundScr.Text = Wins.ToString();
+                        Win(_Wins);
+                        return;
                     } 
                 }
 
@@ -286,16 +249,7 @@ namespace BlackJack_TWO_Solution
                     btnHit.Enabled = false;
                     btnHit.BackColor = Color.DarkSlateGray;
 
-                    lblPDeclaration.Visible = true;
-                    lblPDeclaration.Text = "LOSS";
-                    lblPDeclaration.ForeColor = Color.Red;
-
-                    lblDDeclaration.Visible = true;
-                    lblDDeclaration.Text = "WIN";
-                    lblDDeclaration.ForeColor = Color.Green;
-
-                    Loss++;
-                    lblDealRoundScr.Text = Loss.ToString();
+                    Loss(_Loss);
                     return;
                 }
 
@@ -403,16 +357,7 @@ namespace BlackJack_TWO_Solution
                     btnStay.Enabled = false;
                     btnStay.BackColor = Color.DarkSlateGray;
 
-                    lblPDeclaration.Visible = true;
-                    lblPDeclaration.Text = "WIN";
-                    lblPDeclaration.ForeColor = Color.Green;
-
-                    lblPDeclaration.Visible = true;
-                    lblDDeclaration.Text = "LOSS";
-                    lblDDeclaration.ForeColor = Color.Red;
-
-                    Wins++;
-                    lblPlayRoundScr.Text = Wins.ToString();
+                    Win(_Wins);
                 }
             }
 
@@ -666,6 +611,38 @@ namespace BlackJack_TWO_Solution
             }
             score = int.Parse(face);
             return score;
+        }
+
+        #endregion
+
+        #region /*Misc Methods*/
+
+        public void Win(int a)
+        {
+            lblPDeclaration.Visible = true;
+            lblPDeclaration.Text = "WIN";
+            lblPDeclaration.ForeColor = Color.Green;
+
+            lblDDeclaration.Visible = true;
+            lblDDeclaration.Text = "LOSS";
+            lblDDeclaration.ForeColor = Color.Red;
+
+            a++;
+            lblPlayRoundScr.Text = a.ToString();
+        }
+
+        public void Loss(int a)
+        {
+            lblPDeclaration.Visible = true;
+            lblPDeclaration.Text = "LOSS";
+            lblPDeclaration.ForeColor = Color.Red;
+
+            lblDDeclaration.Visible = true;
+            lblDDeclaration.Text = "WIN";
+            lblDDeclaration.ForeColor = Color.Green;
+
+            a++;
+            lblDealRoundScr.Text = a.ToString();
         }
 
         #endregion
