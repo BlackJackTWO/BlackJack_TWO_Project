@@ -35,12 +35,20 @@
             this.mnuFileReset = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlBlackJackField = new System.Windows.Forms.Panel();
+            this.lbxPHand = new System.Windows.Forms.ListBox();
+            this.lbxDHand = new System.Windows.Forms.ListBox();
+            this.lbxDeck = new System.Windows.Forms.ListBox();
             this.btnNewMatch = new System.Windows.Forms.Button();
             this.pnlDealerField = new System.Windows.Forms.Panel();
-            this.lblDealerName = new System.Windows.Forms.Label();
             this.pnlDealerScore = new System.Windows.Forms.Panel();
             this.lblDealCardScoreTxt = new System.Windows.Forms.Label();
-            this.lblDealCardScoreTitle = new System.Windows.Forms.Label();
+            this.lblDeaCardScoreTitle = new System.Windows.Forms.Label();
+            this.picDealCard5 = new System.Windows.Forms.PictureBox();
+            this.picDealCard4 = new System.Windows.Forms.PictureBox();
+            this.picDealCard3 = new System.Windows.Forms.PictureBox();
+            this.picDealCard2 = new System.Windows.Forms.PictureBox();
+            this.picDealCard1 = new System.Windows.Forms.PictureBox();
+            this.lblDealerName = new System.Windows.Forms.Label();
             this.pnlDealerRound = new System.Windows.Forms.Panel();
             this.lblDealRoundScr = new System.Windows.Forms.Label();
             this.lblDealRoundTitle = new System.Windows.Forms.Label();
@@ -59,15 +67,17 @@
             this.lblPlayCardScoreTxt = new System.Windows.Forms.Label();
             this.lblPlayCardScoreTitle = new System.Windows.Forms.Label();
             this.picPlayCard1 = new System.Windows.Forms.PictureBox();
-            this.picDealCard4 = new System.Windows.Forms.PictureBox();
-            this.picDealCard5 = new System.Windows.Forms.PictureBox();
-            this.picDealCard1 = new System.Windows.Forms.PictureBox();
-            this.picDealCard2 = new System.Windows.Forms.PictureBox();
-            this.picDealCard3 = new System.Windows.Forms.PictureBox();
+            this.lblPDeclaration = new System.Windows.Forms.Label();
+            this.lblDDeclaration = new System.Windows.Forms.Label();
             this.mnuMain.SuspendLayout();
             this.pnlBlackJackField.SuspendLayout();
             this.pnlDealerField.SuspendLayout();
             this.pnlDealerScore.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard1)).BeginInit();
             this.pnlDealerRound.SuspendLayout();
             this.pnlPlayerRound.SuspendLayout();
             this.pnlPlayerField.SuspendLayout();
@@ -77,11 +87,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard2)).BeginInit();
             this.pnlPlayerScore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard3)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -102,7 +107,7 @@
             this.mnuFileReset,
             this.mnuExit});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(46, 24);
+            this.mnuFile.Size = new System.Drawing.Size(46, 26);
             this.mnuFile.Text = "File";
             // 
             // mnuFileNew
@@ -129,6 +134,9 @@
             // pnlBlackJackField
             // 
             this.pnlBlackJackField.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlBlackJackField.Controls.Add(this.lbxPHand);
+            this.pnlBlackJackField.Controls.Add(this.lbxDHand);
+            this.pnlBlackJackField.Controls.Add(this.lbxDeck);
             this.pnlBlackJackField.Controls.Add(this.btnNewMatch);
             this.pnlBlackJackField.Controls.Add(this.pnlDealerField);
             this.pnlBlackJackField.Controls.Add(this.pnlDealerRound);
@@ -141,6 +149,89 @@
             this.pnlBlackJackField.Name = "pnlBlackJackField";
             this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 605);
             this.pnlBlackJackField.TabIndex = 1;
+            // 
+            // lbxPHand
+            // 
+            this.lbxPHand.FormattingEnabled = true;
+            this.lbxPHand.ItemHeight = 16;
+            this.lbxPHand.Location = new System.Drawing.Point(23, 485);
+            this.lbxPHand.Name = "lbxPHand";
+            this.lbxPHand.Size = new System.Drawing.Size(119, 100);
+            this.lbxPHand.TabIndex = 24;
+            this.lbxPHand.Visible = false;
+            // 
+            // lbxDHand
+            // 
+            this.lbxDHand.FormattingEnabled = true;
+            this.lbxDHand.ItemHeight = 16;
+            this.lbxDHand.Location = new System.Drawing.Point(1030, 486);
+            this.lbxDHand.Name = "lbxDHand";
+            this.lbxDHand.Size = new System.Drawing.Size(123, 100);
+            this.lbxDHand.TabIndex = 23;
+            this.lbxDHand.Visible = false;
+            // 
+            // lbxDeck
+            // 
+            this.lbxDeck.FormattingEnabled = true;
+            this.lbxDeck.ItemHeight = 16;
+            this.lbxDeck.Items.AddRange(new object[] {
+            "AA2",
+            "AA3",
+            "AA4",
+            "AA5",
+            "AA6",
+            "AA7",
+            "AA8",
+            "AA9",
+            "AA10",
+            "AJ10",
+            "AQ10",
+            "AK10",
+            "AS11",
+            "BB2",
+            "BB3",
+            "BB4",
+            "BB5",
+            "BB6",
+            "BB7",
+            "BB8",
+            "BB9",
+            "BB10",
+            "BJ10",
+            "BQ10",
+            "BK10",
+            "BS11",
+            "CC2",
+            "CC3",
+            "CC4",
+            "CC5",
+            "CC6",
+            "CC7",
+            "CC8",
+            "CC9",
+            "CC10",
+            "CJ10",
+            "CQ10",
+            "CK10",
+            "CS11",
+            "DD2",
+            "DD3",
+            "DD4",
+            "DD5",
+            "DD6",
+            "DD7",
+            "DD8",
+            "DD9",
+            "DD10",
+            "DJ10",
+            "DQ10",
+            "DK10",
+            "DS11"});
+            this.lbxDeck.Location = new System.Drawing.Point(531, 485);
+            this.lbxDeck.Name = "lbxDeck";
+            this.lbxDeck.Size = new System.Drawing.Size(116, 100);
+            this.lbxDeck.TabIndex = 0;
+            this.lbxDeck.Visible = false;
             // 
             // btnNewMatch
             // 
@@ -156,17 +247,98 @@
             // 
             // pnlDealerField
             // 
-            this.pnlDealerField.Controls.Add(this.picDealCard4);
-            this.pnlDealerField.Controls.Add(this.picDealCard5);
-            this.pnlDealerField.Controls.Add(this.picDealCard1);
-            this.pnlDealerField.Controls.Add(this.picDealCard2);
-            this.pnlDealerField.Controls.Add(this.picDealCard3);
-            this.pnlDealerField.Controls.Add(this.lblDealerName);
+            this.pnlDealerField.Controls.Add(this.lblDDeclaration);
             this.pnlDealerField.Controls.Add(this.pnlDealerScore);
+            this.pnlDealerField.Controls.Add(this.picDealCard5);
+            this.pnlDealerField.Controls.Add(this.picDealCard4);
+            this.pnlDealerField.Controls.Add(this.picDealCard3);
+            this.pnlDealerField.Controls.Add(this.picDealCard2);
+            this.pnlDealerField.Controls.Add(this.picDealCard1);
+            this.pnlDealerField.Controls.Add(this.lblDealerName);
             this.pnlDealerField.Location = new System.Drawing.Point(593, 108);
             this.pnlDealerField.Name = "pnlDealerField";
             this.pnlDealerField.Size = new System.Drawing.Size(560, 369);
             this.pnlDealerField.TabIndex = 20;
+            // 
+            // pnlDealerScore
+            // 
+            this.pnlDealerScore.Controls.Add(this.lblDealCardScoreTxt);
+            this.pnlDealerScore.Controls.Add(this.lblDeaCardScoreTitle);
+            this.pnlDealerScore.Location = new System.Drawing.Point(28, 15);
+            this.pnlDealerScore.Name = "pnlDealerScore";
+            this.pnlDealerScore.Size = new System.Drawing.Size(273, 90);
+            this.pnlDealerScore.TabIndex = 30;
+            // 
+            // lblDealCardScoreTxt
+            // 
+            this.lblDealCardScoreTxt.AutoSize = true;
+            this.lblDealCardScoreTxt.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDealCardScoreTxt.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblDealCardScoreTxt.Location = new System.Drawing.Point(153, 20);
+            this.lblDealCardScoreTxt.Name = "lblDealCardScoreTxt";
+            this.lblDealCardScoreTxt.Size = new System.Drawing.Size(106, 51);
+            this.lblDealCardScoreTxt.TabIndex = 1;
+            this.lblDealCardScoreTxt.Text = "999";
+            // 
+            // lblDeaCardScoreTitle
+            // 
+            this.lblDeaCardScoreTitle.AutoSize = true;
+            this.lblDeaCardScoreTitle.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeaCardScoreTitle.Location = new System.Drawing.Point(6, 16);
+            this.lblDeaCardScoreTitle.Name = "lblDeaCardScoreTitle";
+            this.lblDeaCardScoreTitle.Size = new System.Drawing.Size(164, 51);
+            this.lblDeaCardScoreTitle.TabIndex = 0;
+            this.lblDeaCardScoreTitle.Text = "Score: ";
+            // 
+            // picDealCard5
+            // 
+            this.picDealCard5.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard5.Image")));
+            this.picDealCard5.Location = new System.Drawing.Point(404, 134);
+            this.picDealCard5.Name = "picDealCard5";
+            this.picDealCard5.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard5.TabIndex = 29;
+            this.picDealCard5.TabStop = false;
+            // 
+            // picDealCard4
+            // 
+            this.picDealCard4.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard4.Image")));
+            this.picDealCard4.Location = new System.Drawing.Point(312, 134);
+            this.picDealCard4.Name = "picDealCard4";
+            this.picDealCard4.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard4.TabIndex = 28;
+            this.picDealCard4.TabStop = false;
+            // 
+            // picDealCard3
+            // 
+            this.picDealCard3.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard3.Image")));
+            this.picDealCard3.Location = new System.Drawing.Point(219, 133);
+            this.picDealCard3.Name = "picDealCard3";
+            this.picDealCard3.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard3.TabIndex = 27;
+            this.picDealCard3.TabStop = false;
+            // 
+            // picDealCard2
+            // 
+            this.picDealCard2.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard2.Image")));
+            this.picDealCard2.Location = new System.Drawing.Point(124, 134);
+            this.picDealCard2.Name = "picDealCard2";
+            this.picDealCard2.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard2.TabIndex = 26;
+            this.picDealCard2.TabStop = false;
+            // 
+            // picDealCard1
+            // 
+            this.picDealCard1.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard1.Image")));
+            this.picDealCard1.Location = new System.Drawing.Point(28, 134);
+            this.picDealCard1.Name = "picDealCard1";
+            this.picDealCard1.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard1.TabIndex = 25;
+            this.picDealCard1.TabStop = false;
             // 
             // lblDealerName
             // 
@@ -177,36 +349,6 @@
             this.lblDealerName.Size = new System.Drawing.Size(200, 64);
             this.lblDealerName.TabIndex = 20;
             this.lblDealerName.Text = "Dealer";
-            // 
-            // pnlDealerScore
-            // 
-            this.pnlDealerScore.Controls.Add(this.lblDealCardScoreTxt);
-            this.pnlDealerScore.Controls.Add(this.lblDealCardScoreTitle);
-            this.pnlDealerScore.Location = new System.Drawing.Point(23, 15);
-            this.pnlDealerScore.Name = "pnlDealerScore";
-            this.pnlDealerScore.Size = new System.Drawing.Size(273, 90);
-            this.pnlDealerScore.TabIndex = 9;
-            // 
-            // lblDealCardScoreTxt
-            // 
-            this.lblDealCardScoreTxt.AutoSize = true;
-            this.lblDealCardScoreTxt.Font = new System.Drawing.Font("Elephant", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDealCardScoreTxt.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDealCardScoreTxt.Location = new System.Drawing.Point(153, 18);
-            this.lblDealCardScoreTxt.Name = "lblDealCardScoreTxt";
-            this.lblDealCardScoreTxt.Size = new System.Drawing.Size(114, 55);
-            this.lblDealCardScoreTxt.TabIndex = 1;
-            this.lblDealCardScoreTxt.Text = "999";
-            // 
-            // lblDealCardScoreTitle
-            // 
-            this.lblDealCardScoreTitle.AutoSize = true;
-            this.lblDealCardScoreTitle.Font = new System.Drawing.Font("Elephant", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDealCardScoreTitle.Location = new System.Drawing.Point(4, 14);
-            this.lblDealCardScoreTitle.Name = "lblDealCardScoreTitle";
-            this.lblDealCardScoreTitle.Size = new System.Drawing.Size(172, 55);
-            this.lblDealCardScoreTitle.TabIndex = 0;
-            this.lblDealCardScoreTitle.Text = "Score: ";
             // 
             // pnlDealerRound
             // 
@@ -296,6 +438,7 @@
             // 
             // pnlPlayerField
             // 
+            this.pnlPlayerField.Controls.Add(this.lblPDeclaration);
             this.pnlPlayerField.Controls.Add(this.picPlayCard5);
             this.pnlPlayerField.Controls.Add(this.picPlayCard4);
             this.pnlPlayerField.Controls.Add(this.picPlayCard3);
@@ -311,7 +454,7 @@
             // picPlayCard5
             // 
             this.picPlayCard5.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard5.Image")));
-            this.picPlayCard5.Location = new System.Drawing.Point(118, 165);
+            this.picPlayCard5.Location = new System.Drawing.Point(26, 133);
             this.picPlayCard5.Name = "picPlayCard5";
             this.picPlayCard5.Size = new System.Drawing.Size(131, 196);
             this.picPlayCard5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -321,7 +464,7 @@
             // picPlayCard4
             // 
             this.picPlayCard4.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard4.Image")));
-            this.picPlayCard4.Location = new System.Drawing.Point(303, 162);
+            this.picPlayCard4.Location = new System.Drawing.Point(121, 134);
             this.picPlayCard4.Name = "picPlayCard4";
             this.picPlayCard4.Size = new System.Drawing.Size(131, 196);
             this.picPlayCard4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -331,7 +474,7 @@
             // picPlayCard3
             // 
             this.picPlayCard3.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard3.Image")));
-            this.picPlayCard3.Location = new System.Drawing.Point(31, 112);
+            this.picPlayCard3.Location = new System.Drawing.Point(214, 134);
             this.picPlayCard3.Name = "picPlayCard3";
             this.picPlayCard3.Size = new System.Drawing.Size(131, 196);
             this.picPlayCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -341,7 +484,7 @@
             // picPlayCard2
             // 
             this.picPlayCard2.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard2.Image")));
-            this.picPlayCard2.Location = new System.Drawing.Point(209, 112);
+            this.picPlayCard2.Location = new System.Drawing.Point(307, 134);
             this.picPlayCard2.Name = "picPlayCard2";
             this.picPlayCard2.Size = new System.Drawing.Size(131, 196);
             this.picPlayCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -362,7 +505,7 @@
             // 
             this.pnlPlayerScore.Controls.Add(this.lblPlayCardScoreTxt);
             this.pnlPlayerScore.Controls.Add(this.lblPlayCardScoreTitle);
-            this.pnlPlayerScore.Location = new System.Drawing.Point(23, 15);
+            this.pnlPlayerScore.Location = new System.Drawing.Point(26, 15);
             this.pnlPlayerScore.Name = "pnlPlayerScore";
             this.pnlPlayerScore.Size = new System.Drawing.Size(273, 90);
             this.pnlPlayerScore.TabIndex = 9;
@@ -391,62 +534,34 @@
             // picPlayCard1
             // 
             this.picPlayCard1.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard1.Image")));
-            this.picPlayCard1.Location = new System.Drawing.Point(393, 111);
+            this.picPlayCard1.Location = new System.Drawing.Point(396, 133);
             this.picPlayCard1.Name = "picPlayCard1";
             this.picPlayCard1.Size = new System.Drawing.Size(131, 196);
             this.picPlayCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPlayCard1.TabIndex = 2;
             this.picPlayCard1.TabStop = false;
             // 
-            // picDealCard4
+            // lblPDeclaration
             // 
-            this.picDealCard4.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard4.Image")));
-            this.picDealCard4.Location = new System.Drawing.Point(120, 165);
-            this.picDealCard4.Name = "picDealCard4";
-            this.picDealCard4.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard4.TabIndex = 29;
-            this.picDealCard4.TabStop = false;
+            this.lblPDeclaration.AutoSize = true;
+            this.lblPDeclaration.Font = new System.Drawing.Font("Elephant", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPDeclaration.Location = new System.Drawing.Point(73, 151);
+            this.lblPDeclaration.Name = "lblPDeclaration";
+            this.lblPDeclaration.Size = new System.Drawing.Size(345, 155);
+            this.lblPDeclaration.TabIndex = 25;
+            this.lblPDeclaration.Text = "Loss";
+            this.lblPDeclaration.Visible = false;
             // 
-            // picDealCard5
+            // lblDDeclaration
             // 
-            this.picDealCard5.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard5.Image")));
-            this.picDealCard5.Location = new System.Drawing.Point(305, 162);
-            this.picDealCard5.Name = "picDealCard5";
-            this.picDealCard5.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard5.TabIndex = 28;
-            this.picDealCard5.TabStop = false;
-            // 
-            // picDealCard1
-            // 
-            this.picDealCard1.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard1.Image")));
-            this.picDealCard1.Location = new System.Drawing.Point(33, 112);
-            this.picDealCard1.Name = "picDealCard1";
-            this.picDealCard1.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard1.TabIndex = 27;
-            this.picDealCard1.TabStop = false;
-            // 
-            // picDealCard2
-            // 
-            this.picDealCard2.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard2.Image")));
-            this.picDealCard2.Location = new System.Drawing.Point(211, 112);
-            this.picDealCard2.Name = "picDealCard2";
-            this.picDealCard2.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard2.TabIndex = 26;
-            this.picDealCard2.TabStop = false;
-            // 
-            // picDealCard3
-            // 
-            this.picDealCard3.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard3.Image")));
-            this.picDealCard3.Location = new System.Drawing.Point(395, 111);
-            this.picDealCard3.Name = "picDealCard3";
-            this.picDealCard3.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard3.TabIndex = 25;
-            this.picDealCard3.TabStop = false;
+            this.lblDDeclaration.AutoSize = true;
+            this.lblDDeclaration.Font = new System.Drawing.Font("Elephant", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDDeclaration.Location = new System.Drawing.Point(76, 151);
+            this.lblDDeclaration.Name = "lblDDeclaration";
+            this.lblDDeclaration.Size = new System.Drawing.Size(345, 155);
+            this.lblDDeclaration.TabIndex = 26;
+            this.lblDDeclaration.Text = "Loss";
+            this.lblDDeclaration.Visible = false;
             // 
             // frmMain
             // 
@@ -455,7 +570,10 @@
             this.ClientSize = new System.Drawing.Size(1177, 635);
             this.Controls.Add(this.pnlBlackJackField);
             this.Controls.Add(this.mnuMain);
+            this.DoubleBuffered = true;
             this.MainMenuStrip = this.mnuMain;
+            this.MaximumSize = new System.Drawing.Size(1195, 682);
+            this.MinimumSize = new System.Drawing.Size(1195, 682);
             this.Name = "frmMain";
             this.Text = "TWO : BlackJack Mania";
             this.Load += new System.EventHandler(this.frmMain_Load);
@@ -466,6 +584,11 @@
             this.pnlDealerField.PerformLayout();
             this.pnlDealerScore.ResumeLayout(false);
             this.pnlDealerScore.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard1)).EndInit();
             this.pnlDealerRound.ResumeLayout(false);
             this.pnlDealerRound.PerformLayout();
             this.pnlPlayerRound.ResumeLayout(false);
@@ -479,11 +602,6 @@
             this.pnlPlayerScore.ResumeLayout(false);
             this.pnlPlayerScore.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -503,12 +621,9 @@
         private System.Windows.Forms.Button btnNewMatch;
         private System.Windows.Forms.Panel pnlPlayerRound;
         private System.Windows.Forms.Panel pnlPlayerScore;
-        private System.Windows.Forms.PictureBox picPlayCard1;
         private System.Windows.Forms.Panel pnlDealerRound;
         private System.Windows.Forms.Panel pnlDealerField;
-        private System.Windows.Forms.Panel pnlDealerScore;
         private System.Windows.Forms.Label lblDealerName;
-        private System.Windows.Forms.Label lblDealCardScoreTitle;
         private System.Windows.Forms.Label lblDealRoundScr;
         private System.Windows.Forms.Label lblDealRoundTitle;
         private System.Windows.Forms.Label lblPlayRoundScr;
@@ -516,16 +631,24 @@
         private System.Windows.Forms.Label lblPlayerName;
         private System.Windows.Forms.Label lblPlayCardScoreTxt;
         private System.Windows.Forms.Label lblPlayCardScoreTitle;
-        private System.Windows.Forms.Label lblDealCardScoreTxt;
+        private System.Windows.Forms.PictureBox picDealCard5;
+        private System.Windows.Forms.PictureBox picDealCard4;
+        private System.Windows.Forms.PictureBox picDealCard3;
+        private System.Windows.Forms.PictureBox picDealCard2;
+        private System.Windows.Forms.PictureBox picDealCard1;
         private System.Windows.Forms.PictureBox picPlayCard5;
         private System.Windows.Forms.PictureBox picPlayCard4;
         private System.Windows.Forms.PictureBox picPlayCard3;
         private System.Windows.Forms.PictureBox picPlayCard2;
-        private System.Windows.Forms.PictureBox picDealCard4;
-        private System.Windows.Forms.PictureBox picDealCard5;
-        private System.Windows.Forms.PictureBox picDealCard1;
-        private System.Windows.Forms.PictureBox picDealCard2;
-        private System.Windows.Forms.PictureBox picDealCard3;
+        private System.Windows.Forms.PictureBox picPlayCard1;
+        private System.Windows.Forms.ListBox lbxDHand;
+        private System.Windows.Forms.ListBox lbxDeck;
+        private System.Windows.Forms.ListBox lbxPHand;
+        private System.Windows.Forms.Panel pnlDealerScore;
+        private System.Windows.Forms.Label lblDealCardScoreTxt;
+        private System.Windows.Forms.Label lblDeaCardScoreTitle;
+        private System.Windows.Forms.Label lblPDeclaration;
+        private System.Windows.Forms.Label lblDDeclaration;
     }
 }
 
