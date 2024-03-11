@@ -35,11 +35,18 @@
             this.mnuFileReset = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlBlackJackField = new System.Windows.Forms.Panel();
+            this.pnlInputField = new System.Windows.Forms.Panel();
+            this.lblPNameTxt = new System.Windows.Forms.Label();
+            this.lblNameFlavor = new System.Windows.Forms.Label();
+            this.btnContinue = new System.Windows.Forms.Button();
+            this.tbxName = new System.Windows.Forms.TextBox();
+            this.lblNameInput = new System.Windows.Forms.Label();
             this.lbxPHand = new System.Windows.Forms.ListBox();
             this.lbxDHand = new System.Windows.Forms.ListBox();
             this.lbxDeck = new System.Windows.Forms.ListBox();
             this.btnNewMatch = new System.Windows.Forms.Button();
             this.pnlDealerField = new System.Windows.Forms.Panel();
+            this.lblDealerName = new System.Windows.Forms.Label();
             this.lblDDeclaration = new System.Windows.Forms.Label();
             this.pnlDealerScore = new System.Windows.Forms.Panel();
             this.lblDealCardScoreTxt = new System.Windows.Forms.Label();
@@ -49,7 +56,6 @@
             this.picDealCard3 = new System.Windows.Forms.PictureBox();
             this.picDealCard2 = new System.Windows.Forms.PictureBox();
             this.picDealCard1 = new System.Windows.Forms.PictureBox();
-            this.lblDealerName = new System.Windows.Forms.Label();
             this.pnlDealerRound = new System.Windows.Forms.Panel();
             this.lblDealRoundScr = new System.Windows.Forms.Label();
             this.lblDealRoundTitle = new System.Windows.Forms.Label();
@@ -71,6 +77,7 @@
             this.picPlayCard1 = new System.Windows.Forms.PictureBox();
             this.mnuMain.SuspendLayout();
             this.pnlBlackJackField.SuspendLayout();
+            this.pnlInputField.SuspendLayout();
             this.pnlDealerField.SuspendLayout();
             this.pnlDealerScore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDealCard5)).BeginInit();
@@ -96,7 +103,7 @@
             this.mnuFile});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(1177, 28);
+            this.mnuMain.Size = new System.Drawing.Size(1471, 38);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -107,7 +114,7 @@
             this.mnuFileReset,
             this.mnuExit});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(46, 24);
+            this.mnuFile.Size = new System.Drawing.Size(46, 34);
             this.mnuFile.Text = "File";
             // 
             // mnuFileNew
@@ -134,6 +141,7 @@
             // pnlBlackJackField
             // 
             this.pnlBlackJackField.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.pnlBlackJackField.Controls.Add(this.pnlInputField);
             this.pnlBlackJackField.Controls.Add(this.lbxPHand);
             this.pnlBlackJackField.Controls.Add(this.lbxDHand);
             this.pnlBlackJackField.Controls.Add(this.lbxDeck);
@@ -145,10 +153,75 @@
             this.pnlBlackJackField.Controls.Add(this.btnHit);
             this.pnlBlackJackField.Controls.Add(this.pnlPlayerField);
             this.pnlBlackJackField.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 28);
+            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 48);
             this.pnlBlackJackField.Name = "pnlBlackJackField";
-            this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 607);
+            this.pnlBlackJackField.Size = new System.Drawing.Size(1471, 731);
             this.pnlBlackJackField.TabIndex = 1;
+            // 
+            // pnlInputField
+            // 
+            this.pnlInputField.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlInputField.Controls.Add(this.lblPNameTxt);
+            this.pnlInputField.Controls.Add(this.lblNameFlavor);
+            this.pnlInputField.Controls.Add(this.btnContinue);
+            this.pnlInputField.Controls.Add(this.tbxName);
+            this.pnlInputField.Controls.Add(this.lblNameInput);
+            this.pnlInputField.Location = new System.Drawing.Point(47, 150);
+            this.pnlInputField.Name = "pnlInputField";
+            this.pnlInputField.Size = new System.Drawing.Size(1081, 290);
+            this.pnlInputField.TabIndex = 34;
+            // 
+            // lblPNameTxt
+            // 
+            this.lblPNameTxt.AutoSize = true;
+            this.lblPNameTxt.Location = new System.Drawing.Point(515, 21);
+            this.lblPNameTxt.Name = "lblPNameTxt";
+            this.lblPNameTxt.Size = new System.Drawing.Size(44, 16);
+            this.lblPNameTxt.TabIndex = 35;
+            this.lblPNameTxt.Text = "label1";
+            this.lblPNameTxt.Visible = false;
+            // 
+            // lblNameFlavor
+            // 
+            this.lblNameFlavor.AutoSize = true;
+            this.lblNameFlavor.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameFlavor.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblNameFlavor.Location = new System.Drawing.Point(408, 91);
+            this.lblNameFlavor.Name = "lblNameFlavor";
+            this.lblNameFlavor.Size = new System.Drawing.Size(267, 30);
+            this.lblNameFlavor.TabIndex = 34;
+            this.lblNameFlavor.Text = "(Up to six characters.)";
+            // 
+            // btnContinue
+            // 
+            this.btnContinue.BackColor = System.Drawing.Color.Teal;
+            this.btnContinue.Font = new System.Drawing.Font("Elephant", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinue.Location = new System.Drawing.Point(438, 202);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(209, 53);
+            this.btnContinue.TabIndex = 31;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = false;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
+            // 
+            // tbxName
+            // 
+            this.tbxName.Font = new System.Drawing.Font("Elephant", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxName.Location = new System.Drawing.Point(366, 136);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(335, 50);
+            this.tbxName.TabIndex = 32;
+            // 
+            // lblNameInput
+            // 
+            this.lblNameInput.AutoSize = true;
+            this.lblNameInput.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameInput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblNameInput.Location = new System.Drawing.Point(272, 37);
+            this.lblNameInput.Name = "lblNameInput";
+            this.lblNameInput.Size = new System.Drawing.Size(545, 51);
+            this.lblNameInput.TabIndex = 33;
+            this.lblNameInput.Text = "Please enter in your name:";
             // 
             // lbxPHand
             // 
@@ -158,7 +231,6 @@
             this.lbxPHand.Name = "lbxPHand";
             this.lbxPHand.Size = new System.Drawing.Size(119, 100);
             this.lbxPHand.TabIndex = 24;
-            this.lbxPHand.Visible = false;
             // 
             // lbxDHand
             // 
@@ -168,7 +240,6 @@
             this.lbxDHand.Name = "lbxDHand";
             this.lbxDHand.Size = new System.Drawing.Size(123, 100);
             this.lbxDHand.TabIndex = 23;
-            this.lbxDHand.Visible = false;
             // 
             // lbxDeck
             // 
@@ -247,6 +318,7 @@
             // 
             // pnlDealerField
             // 
+            this.pnlDealerField.Controls.Add(this.lblDealerName);
             this.pnlDealerField.Controls.Add(this.lblDDeclaration);
             this.pnlDealerField.Controls.Add(this.pnlDealerScore);
             this.pnlDealerField.Controls.Add(this.picDealCard5);
@@ -254,11 +326,20 @@
             this.pnlDealerField.Controls.Add(this.picDealCard3);
             this.pnlDealerField.Controls.Add(this.picDealCard2);
             this.pnlDealerField.Controls.Add(this.picDealCard1);
-            this.pnlDealerField.Controls.Add(this.lblDealerName);
             this.pnlDealerField.Location = new System.Drawing.Point(593, 108);
             this.pnlDealerField.Name = "pnlDealerField";
             this.pnlDealerField.Size = new System.Drawing.Size(560, 369);
             this.pnlDealerField.TabIndex = 20;
+            // 
+            // lblDealerName
+            // 
+            this.lblDealerName.AutoSize = true;
+            this.lblDealerName.Font = new System.Drawing.Font("Elephant", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDealerName.Location = new System.Drawing.Point(261, 26);
+            this.lblDealerName.Name = "lblDealerName";
+            this.lblDealerName.Size = new System.Drawing.Size(200, 64);
+            this.lblDealerName.TabIndex = 31;
+            this.lblDealerName.Text = "Dealer";
             // 
             // lblDDeclaration
             // 
@@ -351,16 +432,6 @@
             this.picDealCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDealCard1.TabIndex = 25;
             this.picDealCard1.TabStop = false;
-            // 
-            // lblDealerName
-            // 
-            this.lblDealerName.AutoSize = true;
-            this.lblDealerName.Font = new System.Drawing.Font("Elephant", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDealerName.Location = new System.Drawing.Point(330, 28);
-            this.lblDealerName.Name = "lblDealerName";
-            this.lblDealerName.Size = new System.Drawing.Size(200, 64);
-            this.lblDealerName.TabIndex = 20;
-            this.lblDealerName.Text = "Dealer";
             // 
             // pnlDealerRound
             // 
@@ -518,10 +589,10 @@
             // lblPlayerName
             // 
             this.lblPlayerName.AutoSize = true;
-            this.lblPlayerName.Font = new System.Drawing.Font("Elephant", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerName.Location = new System.Drawing.Point(326, 28);
+            this.lblPlayerName.Font = new System.Drawing.Font("Elephant", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerName.Location = new System.Drawing.Point(262, 38);
             this.lblPlayerName.Name = "lblPlayerName";
-            this.lblPlayerName.Size = new System.Drawing.Size(192, 64);
+            this.lblPlayerName.Size = new System.Drawing.Size(141, 47);
             this.lblPlayerName.TabIndex = 20;
             this.lblPlayerName.Text = "Player";
             // 
@@ -530,6 +601,7 @@
             this.pnlPlayerScore.Controls.Add(this.lblPlayCardScoreTxt);
             this.pnlPlayerScore.Controls.Add(this.lblPlayCardScoreTitle);
             this.pnlPlayerScore.Location = new System.Drawing.Point(26, 15);
+            this.pnlPlayerScore.Margin = new System.Windows.Forms.Padding(0);
             this.pnlPlayerScore.Name = "pnlPlayerScore";
             this.pnlPlayerScore.Size = new System.Drawing.Size(273, 90);
             this.pnlPlayerScore.TabIndex = 9;
@@ -540,6 +612,7 @@
             this.lblPlayCardScoreTxt.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayCardScoreTxt.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPlayCardScoreTxt.Location = new System.Drawing.Point(153, 20);
+            this.lblPlayCardScoreTxt.Margin = new System.Windows.Forms.Padding(0);
             this.lblPlayCardScoreTxt.Name = "lblPlayCardScoreTxt";
             this.lblPlayCardScoreTxt.Size = new System.Drawing.Size(106, 51);
             this.lblPlayCardScoreTxt.TabIndex = 1;
@@ -569,19 +642,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 635);
+            this.ClientSize = new System.Drawing.Size(1177, 623);
             this.Controls.Add(this.pnlBlackJackField);
             this.Controls.Add(this.mnuMain);
             this.DoubleBuffered = true;
             this.MainMenuStrip = this.mnuMain;
-            this.MaximumSize = new System.Drawing.Size(1195, 682);
-            this.MinimumSize = new System.Drawing.Size(1195, 682);
+            this.MaximumSize = new System.Drawing.Size(1195, 670);
+            this.MinimumSize = new System.Drawing.Size(1195, 670);
             this.Name = "frmMain";
             this.Text = "TWO : BlackJack Mania";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.pnlBlackJackField.ResumeLayout(false);
+            this.pnlInputField.ResumeLayout(false);
+            this.pnlInputField.PerformLayout();
             this.pnlDealerField.ResumeLayout(false);
             this.pnlDealerField.PerformLayout();
             this.pnlDealerScore.ResumeLayout(false);
@@ -625,7 +700,6 @@
         private System.Windows.Forms.Panel pnlPlayerScore;
         private System.Windows.Forms.Panel pnlDealerRound;
         private System.Windows.Forms.Panel pnlDealerField;
-        private System.Windows.Forms.Label lblDealerName;
         private System.Windows.Forms.Label lblDealRoundScr;
         private System.Windows.Forms.Label lblDealRoundTitle;
         private System.Windows.Forms.Label lblPlayRoundScr;
@@ -651,6 +725,13 @@
         private System.Windows.Forms.Label lblDeaCardScoreTitle;
         private System.Windows.Forms.Label lblPDeclaration;
         private System.Windows.Forms.Label lblDDeclaration;
+        private System.Windows.Forms.Label lblNameInput;
+        private System.Windows.Forms.TextBox tbxName;
+        private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.Panel pnlInputField;
+        private System.Windows.Forms.Label lblNameFlavor;
+        private System.Windows.Forms.Label lblPNameTxt;
+        private System.Windows.Forms.Label lblDealerName;
     }
 }
 

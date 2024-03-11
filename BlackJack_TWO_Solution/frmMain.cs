@@ -13,6 +13,7 @@ using System.Windows.Forms;
 
 namespace BlackJack_TWO_Solution
 {
+    //image.fromfile[]
     public partial class frmMain : Form
     {
         #region /*Global Variables*/
@@ -20,6 +21,7 @@ namespace BlackJack_TWO_Solution
         private string _face;
         private string _P = "Player";
         private string _D = "Dealer";
+
         private int _score = 0;
         private int _PhandIndex;
         private int _DhandIndex;
@@ -45,6 +47,7 @@ namespace BlackJack_TWO_Solution
             pnlDealerField.Visible = false;
             btnHit.Visible = false;
             btnStay.Visible = false;
+            btnNewMatch.Visible = false;
 
             pnlPlayerRound.BorderStyle = BorderStyle.Fixed3D;
             pnlPlayerField.BorderStyle = BorderStyle.Fixed3D;
@@ -67,12 +70,28 @@ namespace BlackJack_TWO_Solution
 
         #region /*Game Interactions*/
 
+        //Grabs player name input
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            lblPNameTxt.Text = tbxName.Text;
+
+            if(lblPNameTxt.Text != string.Empty)
+            {
+                pnlInputField.Visible = false;
+                btnContinue.Visible = false;
+                btnContinue.Enabled = false;
+                tbxName.Visible = false;
+                tbxName.Enabled = false;
+                lblNameInput.Visible = false;
+                lblNameFlavor.Visible = false;
+
+                btnNewMatch.Visible = true;
+            }  
+        }
+
         //Builds new match on click of startup button
         private void btnNewMatch_Click(object sender, EventArgs e)
         {
-            lblDealCardScoreTxt.Text = "0";
-            lblPlayCardScoreTxt.Text = "0";
-
             Initialize();
 
             shuffleArray();
@@ -90,12 +109,8 @@ namespace BlackJack_TWO_Solution
         //Builds new match on click of file menu selection
         private void mnuFileNew_Click(object sender, EventArgs e)
         {
-            lblDealCardScoreTxt.Text = "0";
-            lblPlayCardScoreTxt.Text = "0";
-
-            lblDealerName.Text = "Dealer";
-            lblPlayerName.Text = "Player";
-
+            int temp1 = _Wins;
+            int temp2 = _Loss;
 
             clearHand(_P);
             clearHand(_D);
@@ -119,16 +134,6 @@ namespace BlackJack_TWO_Solution
         {
             lblDealRoundScr.Text = "0";
             lblPlayRoundScr.Text = "0";
-
-            lblDealCardScoreTxt.Text = "0";
-            lblPlayCardScoreTxt.Text = "0";
-
-            lblDealerName.Text = "Dealer";
-            lblDealerName.ForeColor = Color.Black;
-
-            lblPlayerName.Text = "Player";
-            lblPlayerName.ForeColor = Color.Black;
-
 
             clearHand(_P);
             clearHand(_D);
@@ -176,6 +181,9 @@ namespace BlackJack_TWO_Solution
                 lblPlayerName.ForeColor = Color.Red;
 
                 Loss(_Loss);
+                _Loss++;
+                lblDealRoundScr.Text = _Loss.ToString();
+                return;
             }
             
 
@@ -204,6 +212,8 @@ namespace BlackJack_TWO_Solution
                         btnHit.BackColor = Color.DarkSlateGray;
 
                         Win(_Wins);
+                        _Wins++;
+                        lblPlayRoundScr.Text = _Wins.ToString();
                         return;
                     }
                     else if (int.Parse(lblPlayCardScoreTxt.Text) < 21 &&
@@ -215,6 +225,8 @@ namespace BlackJack_TWO_Solution
                         btnHit.BackColor = Color.DarkSlateGray;
 
                         Win(_Wins);
+                        _Wins++;
+                        lblPlayRoundScr.Text = _Wins.ToString();
                         return;
                     }
                     else if (int.Parse(lblPlayCardScoreTxt.Text) < 21 &&
@@ -226,6 +238,8 @@ namespace BlackJack_TWO_Solution
                         btnHit.BackColor = Color.DarkSlateGray;
 
                         Loss(_Loss);
+                        _Loss++;
+                        lblDealRoundScr.Text = _Loss.ToString();
                         return;
                     }
                     else if (lbxPHand.Items.Count == 5 &&
@@ -240,6 +254,8 @@ namespace BlackJack_TWO_Solution
                         btnStay.BackColor = Color.DarkSlateGray;
 
                         Win(_Wins);
+                        _Wins++;
+                        lblPlayRoundScr.Text = _Wins.ToString();
                         return;
                     } 
                 }
@@ -250,6 +266,8 @@ namespace BlackJack_TWO_Solution
                     btnHit.BackColor = Color.DarkSlateGray;
 
                     Loss(_Loss);
+                    _Loss++;
+                    lblDealRoundScr.Text = _Loss.ToString();
                     return;
                 }
 
@@ -274,11 +292,20 @@ namespace BlackJack_TWO_Solution
             _PhandIndex = 0;
             _DhandIndex = 0;
 
+            lblDealCardScoreTxt.Text = "0";
+            lblPlayCardScoreTxt.Text = "0";
+
             btnNewMatch.Enabled = false;
             btnNewMatch.Visible = false;
 
             lblPDeclaration.Visible = false;
             lblDDeclaration.Visible = false;
+
+            lblDealerName.Text = "Dealer";
+            lblDealerName.ForeColor = Color.Black;
+
+            lblPlayerName.Text = lblPNameTxt.Text;
+            lblPlayerName.ForeColor = Color.Black;
 
             mnuFileReset.Enabled = true;
             mnuFileNew.Enabled = true; ;
@@ -341,44 +368,64 @@ namespace BlackJack_TWO_Solution
                 } while (_DhandIndex < 2);
             }
 
-            if (int.Parse(lblPlayCardScoreTxt.Text) == 21)
-            {
-                string first = lbxPHand.Items[0].ToString();
-                string second = lbxPHand.Items[1].ToString();
-
-                btnHit.Enabled = false;
-                btnHit.BackColor = Color.DarkSlateGray;
-
-                if (first.Contains("11") && second.Contains("AJ") ||
-                    first.Contains("AJ") && second.Contains("11") ||
-                    first.Contains("CJ") && second.Contains("11") ||
-                    first.Contains("11") && second.Contains("CJ"))
-                {
-                    btnStay.Enabled = false;
-                    btnStay.BackColor = Color.DarkSlateGray;
-
-                    Win(_Wins);
-                }
-            }
-
-            //if (int.Parse(lblPlayCardScoreTxt.Text) > 11 && lbxPHand.Items.Count <= 4)
+            #region /*Rule of 21*/
+            
+            //Needs work
+            //if (a == "Player")
             //{
-
-            //    for (int i = 0; i <= lbxPHand.Items.Count; i++)
+            //    if (int.Parse(lblPlayCardScoreTxt.Text) == 21)
             //    {
-            //        string temp = lbxPHand.Items[i].ToString();
-            //        if (temp.Contains("11"))
+            //        string first = lbxPHand.Items[0].ToString();
+            //        string second = lbxPHand.Items[1].ToString();
+
+            //        btnHit.Enabled = false;
+            //        btnHit.BackColor = Color.DarkSlateGray;
+
+            //        if (first.Contains("11") && second.Contains("AJ") ||
+            //            first.Contains("AJ") && second.Contains("11") ||
+            //            first.Contains("CJ") && second.Contains("11") ||
+            //            first.Contains("11") && second.Contains("CJ"))
             //        {
-            //            _score = 1;
+            //            btnStay.Enabled = false;
+            //            btnStay.BackColor = Color.DarkSlateGray;
+
+            //            Win(_Wins);
+            //            _Wins++;
+            //            lblPlayRoundScr.Text = _Wins.ToString();
+            //            return;
             //        }
             //    }
+            //}
+            //if (a == "Dealer")
+            //{
+            //    if (int.Parse(lblDealCardScoreTxt.Text) == 21)
+            //    {
+            //        string first = lbxDHand.Items[0].ToString();
+            //        string second = lbxDHand.Items[1].ToString();
 
+            //        btnHit.Enabled = false;
+            //        btnHit.BackColor = Color.DarkSlateGray;
+
+            //        if (first.Contains("11") && second.Contains("AJ") ||
+            //            first.Contains("AJ") && second.Contains("11") ||
+            //            first.Contains("CJ") && second.Contains("11") ||
+            //            first.Contains("11") && second.Contains("CJ"))
+            //        {
+            //            btnStay.Enabled = false;
+            //            btnStay.BackColor = Color.DarkSlateGray;
+
+            //            Loss(_Loss);
+            //            _Loss++;
+            //            lblDealRoundScr.Text = _Loss.ToString();
+            //            return;
+            //        }
+            //    }
             //}
 
-
+            #endregion
         }
 
-        //Clears cards in hand
+        //Clears cards from hand
         public void clearHand(string a)
         {
             if(a == "Player")
@@ -412,7 +459,7 @@ namespace BlackJack_TWO_Solution
         {
             _face = string.Empty;
 
-            _face = sortValue(_face, a); //determins rank value of card
+            //_face = sortValue(_face, a); //determins rank value of card
             _score = evaluateCardScore(ref _face,  ref _score, a);
 
             if (a == "Player")
@@ -425,6 +472,8 @@ namespace BlackJack_TWO_Solution
             }
 
         }
+
+
 
         #endregion
 
@@ -511,14 +560,6 @@ namespace BlackJack_TWO_Solution
         public string filterCard(string face, string a)
         {
             string trim = string.Empty;
-            if (a == "Player")
-            {
-                face = lbxPHand.Items[_PhandIndex].ToString();
-            }
-            else if (a == "Dealer")
-            {
-                face = lbxDHand.Items[_DhandIndex].ToString();
-            }
 
             char[] rank = { 'A', 'B', 'C', 'D', 'J', 'Q', 'K', 'S' };
             trim = face.Trim(rank);
@@ -526,17 +567,9 @@ namespace BlackJack_TWO_Solution
         }
 
         //Catagorizes value into ranks
-        public string sortValue(string face, string a)
+        public string sortValue(string face, string a) // REwork into picture variable list
         {
             string sCheck = string.Empty;
-            if (a == "Player")
-            {
-                sCheck = lbxPHand.Items[_PhandIndex].ToString();
-            }
-            else if (a == "Dealer")
-            {
-                sCheck = lbxDHand.Items[_DhandIndex].ToString();
-            }
 
             if (sCheck.StartsWith("AS") ||
                 sCheck.StartsWith("BS") ||
@@ -572,13 +605,20 @@ namespace BlackJack_TWO_Solution
         //Evaluates the value based on ranking
         public int evaluateCardScore(ref string face, ref int score, string a)
         {
+            
             if (a == "Player")
             {
-
+                face = lbxPHand.Items[_PhandIndex].ToString();
+                int temp = int.Parse(lblPlayCardScoreTxt.Text); 
                 if (face.Contains("S"))
                 {
                     face = "11";
                     score = 11;
+
+                    if (temp > 11 && face == "11")
+                    {
+                        score = 1;
+                    }
                 }
                 else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))
                 {
@@ -593,10 +633,18 @@ namespace BlackJack_TWO_Solution
             }
             if (a == "Dealer")
             {
+                face = lbxDHand.Items[_DhandIndex].ToString();
+                int temp = int.Parse(lblDealCardScoreTxt.Text);
                 if (face.Contains("S"))
-                {
+                {                    
                     face = "11";
                     score = 11;
+
+                    if (temp > 11 && face == "11")
+                    {
+                        score = 1;
+                    }
+
                 }
                 else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))
                 {
@@ -617,6 +665,7 @@ namespace BlackJack_TWO_Solution
 
         #region /*Misc Methods*/
 
+        //Changes declarations and applies tallies to the winners round score
         public void Win(int a)
         {
             lblPDeclaration.Visible = true;
@@ -625,10 +674,7 @@ namespace BlackJack_TWO_Solution
 
             lblDDeclaration.Visible = true;
             lblDDeclaration.Text = "LOSS";
-            lblDDeclaration.ForeColor = Color.Red;
-
-            a++;
-            lblPlayRoundScr.Text = a.ToString();
+            lblDDeclaration.ForeColor = Color.Red; 
         }
 
         public void Loss(int a)
@@ -639,13 +685,11 @@ namespace BlackJack_TWO_Solution
 
             lblDDeclaration.Visible = true;
             lblDDeclaration.Text = "WIN";
-            lblDDeclaration.ForeColor = Color.Green;
-
-            a++;
-            lblDealRoundScr.Text = a.ToString();
+            lblDDeclaration.ForeColor = Color.Green;            
         }
 
         #endregion
+
 
     }
 
