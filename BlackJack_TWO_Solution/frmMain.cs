@@ -747,11 +747,17 @@ namespace BlackJack_TWO_Solution
                 }
                 else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))
                 {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _P);
+
                     face = "10";
                     score = 10;
                 }
                 else
                 {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _P);
+
                     face = filterCard(face, a);
                 }
 
@@ -759,11 +765,13 @@ namespace BlackJack_TWO_Solution
             if (a == "Dealer")
             {
                 face = lbxDHand.Items[_DhandIndex].ToString();
-                _draw = face;
 
                 int temp = int.Parse(lblDealCardScoreTxt.Text);
                 if (face.Contains("S"))
-                {                    
+                {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _D);
+
                     face = "11";
                     score = 11;
 
@@ -775,11 +783,17 @@ namespace BlackJack_TWO_Solution
                 }
                 else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))
                 {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _D);
+
                     face = "10";
                     score = 10;
                 }
                 else
                 {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _D);
+
                     face = filterCard(face, a);
                 }
 
