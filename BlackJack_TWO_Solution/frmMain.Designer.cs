@@ -103,7 +103,7 @@
             this.mnuFile});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(1471, 38);
+            this.mnuMain.Size = new System.Drawing.Size(1177, 30);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -114,7 +114,7 @@
             this.mnuFileReset,
             this.mnuExit});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(46, 34);
+            this.mnuFile.Size = new System.Drawing.Size(46, 24);
             this.mnuFile.Text = "File";
             // 
             // mnuFileNew
@@ -153,9 +153,9 @@
             this.pnlBlackJackField.Controls.Add(this.btnHit);
             this.pnlBlackJackField.Controls.Add(this.pnlPlayerField);
             this.pnlBlackJackField.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 48);
+            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 30);
             this.pnlBlackJackField.Name = "pnlBlackJackField";
-            this.pnlBlackJackField.Size = new System.Drawing.Size(1471, 731);
+            this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 593);
             this.pnlBlackJackField.TabIndex = 1;
             // 
             // pnlInputField
@@ -166,7 +166,7 @@
             this.pnlInputField.Controls.Add(this.btnContinue);
             this.pnlInputField.Controls.Add(this.tbxName);
             this.pnlInputField.Controls.Add(this.lblNameInput);
-            this.pnlInputField.Location = new System.Drawing.Point(47, 150);
+            this.pnlInputField.Location = new System.Drawing.Point(48, 119);
             this.pnlInputField.Name = "pnlInputField";
             this.pnlInputField.Size = new System.Drawing.Size(1081, 290);
             this.pnlInputField.TabIndex = 34;
@@ -631,6 +631,7 @@
             // picPlayCard1
             // 
             this.picPlayCard1.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard1.Image")));
+            this.picPlayCard1.InitialImage = null;
             this.picPlayCard1.Location = new System.Drawing.Point(396, 124);
             this.picPlayCard1.Name = "picPlayCard1";
             this.picPlayCard1.Size = new System.Drawing.Size(131, 196);
