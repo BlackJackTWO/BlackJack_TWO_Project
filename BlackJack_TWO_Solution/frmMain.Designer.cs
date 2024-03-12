@@ -37,17 +37,22 @@
             this.pnlBlackJackField = new System.Windows.Forms.Panel();
             this.pnlInputField = new System.Windows.Forms.Panel();
             this.lblPNameTxt = new System.Windows.Forms.Label();
+            this.lblDNameInput = new System.Windows.Forms.Label();
+            this.tbxPName = new System.Windows.Forms.TextBox();
+            this.lblPNameInput = new System.Windows.Forms.Label();
+            this.lblDNameTxt = new System.Windows.Forms.Label();
             this.lblNameFlavor = new System.Windows.Forms.Label();
             this.btnContinue = new System.Windows.Forms.Button();
-            this.tbxName = new System.Windows.Forms.TextBox();
-            this.lblNameInput = new System.Windows.Forms.Label();
+            this.tbxDName = new System.Windows.Forms.TextBox();
+            this.lblNameInputTitle = new System.Windows.Forms.Label();
             this.lbxPHand = new System.Windows.Forms.ListBox();
             this.lbxDHand = new System.Windows.Forms.ListBox();
             this.lbxDeck = new System.Windows.Forms.ListBox();
             this.btnNewMatch = new System.Windows.Forms.Button();
             this.pnlDealerField = new System.Windows.Forms.Panel();
+            this.lblDDeclaration1 = new System.Windows.Forms.Label();
             this.lblDealerName = new System.Windows.Forms.Label();
-            this.lblDDeclaration = new System.Windows.Forms.Label();
+            this.lblDDeclaration2 = new System.Windows.Forms.Label();
             this.pnlDealerScore = new System.Windows.Forms.Panel();
             this.lblDealCardScoreTxt = new System.Windows.Forms.Label();
             this.lblDeaCardScoreTitle = new System.Windows.Forms.Label();
@@ -65,7 +70,8 @@
             this.btnStay = new System.Windows.Forms.Button();
             this.btnHit = new System.Windows.Forms.Button();
             this.pnlPlayerField = new System.Windows.Forms.Panel();
-            this.lblPDeclaration = new System.Windows.Forms.Label();
+            this.lblPDeclaration1 = new System.Windows.Forms.Label();
+            this.lblPDeclaration2 = new System.Windows.Forms.Label();
             this.picPlayCard5 = new System.Windows.Forms.PictureBox();
             this.picPlayCard4 = new System.Windows.Forms.PictureBox();
             this.picPlayCard3 = new System.Windows.Forms.PictureBox();
@@ -103,7 +109,7 @@
             this.mnuFile});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(1177, 30);
+            this.mnuMain.Size = new System.Drawing.Size(1177, 28);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -153,40 +159,84 @@
             this.pnlBlackJackField.Controls.Add(this.btnHit);
             this.pnlBlackJackField.Controls.Add(this.pnlPlayerField);
             this.pnlBlackJackField.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 30);
+            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 28);
             this.pnlBlackJackField.Name = "pnlBlackJackField";
-            this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 593);
+            this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 595);
             this.pnlBlackJackField.TabIndex = 1;
             // 
             // pnlInputField
             // 
             this.pnlInputField.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlInputField.Controls.Add(this.lblPNameTxt);
+            this.pnlInputField.Controls.Add(this.lblDNameInput);
+            this.pnlInputField.Controls.Add(this.tbxPName);
+            this.pnlInputField.Controls.Add(this.lblPNameInput);
+            this.pnlInputField.Controls.Add(this.lblDNameTxt);
             this.pnlInputField.Controls.Add(this.lblNameFlavor);
             this.pnlInputField.Controls.Add(this.btnContinue);
-            this.pnlInputField.Controls.Add(this.tbxName);
-            this.pnlInputField.Controls.Add(this.lblNameInput);
-            this.pnlInputField.Location = new System.Drawing.Point(48, 119);
+            this.pnlInputField.Controls.Add(this.tbxDName);
+            this.pnlInputField.Controls.Add(this.lblNameInputTitle);
+            this.pnlInputField.Location = new System.Drawing.Point(48, 125);
             this.pnlInputField.Name = "pnlInputField";
-            this.pnlInputField.Size = new System.Drawing.Size(1081, 290);
+            this.pnlInputField.Size = new System.Drawing.Size(1081, 329);
             this.pnlInputField.TabIndex = 34;
             // 
             // lblPNameTxt
             // 
             this.lblPNameTxt.AutoSize = true;
-            this.lblPNameTxt.Location = new System.Drawing.Point(515, 21);
+            this.lblPNameTxt.Location = new System.Drawing.Point(9, 294);
             this.lblPNameTxt.Name = "lblPNameTxt";
             this.lblPNameTxt.Size = new System.Drawing.Size(44, 16);
-            this.lblPNameTxt.TabIndex = 35;
+            this.lblPNameTxt.TabIndex = 39;
             this.lblPNameTxt.Text = "label1";
             this.lblPNameTxt.Visible = false;
+            // 
+            // lblDNameInput
+            // 
+            this.lblDNameInput.AutoSize = true;
+            this.lblDNameInput.Font = new System.Drawing.Font("Elephant", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDNameInput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblDNameInput.Location = new System.Drawing.Point(84, 182);
+            this.lblDNameInput.Name = "lblDNameInput";
+            this.lblDNameInput.Size = new System.Drawing.Size(339, 59);
+            this.lblDNameInput.TabIndex = 38;
+            this.lblDNameInput.Text = "Player Name:";
+            // 
+            // tbxPName
+            // 
+            this.tbxPName.Font = new System.Drawing.Font("Elephant", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPName.Location = new System.Drawing.Point(521, 179);
+            this.tbxPName.Name = "tbxPName";
+            this.tbxPName.Size = new System.Drawing.Size(309, 50);
+            this.tbxPName.TabIndex = 37;
+            // 
+            // lblPNameInput
+            // 
+            this.lblPNameInput.AutoSize = true;
+            this.lblPNameInput.Font = new System.Drawing.Font("Elephant", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPNameInput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblPNameInput.Location = new System.Drawing.Point(84, 81);
+            this.lblPNameInput.Name = "lblPNameInput";
+            this.lblPNameInput.Size = new System.Drawing.Size(346, 59);
+            this.lblPNameInput.TabIndex = 36;
+            this.lblPNameInput.Text = "Dealer Name:";
+            // 
+            // lblDNameTxt
+            // 
+            this.lblDNameTxt.AutoSize = true;
+            this.lblDNameTxt.Location = new System.Drawing.Point(9, 257);
+            this.lblDNameTxt.Name = "lblDNameTxt";
+            this.lblDNameTxt.Size = new System.Drawing.Size(44, 16);
+            this.lblDNameTxt.TabIndex = 35;
+            this.lblDNameTxt.Text = "label1";
+            this.lblDNameTxt.Visible = false;
             // 
             // lblNameFlavor
             // 
             this.lblNameFlavor.AutoSize = true;
             this.lblNameFlavor.Font = new System.Drawing.Font("Elephant", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameFlavor.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblNameFlavor.Location = new System.Drawing.Point(408, 91);
+            this.lblNameFlavor.Location = new System.Drawing.Point(340, 144);
             this.lblNameFlavor.Name = "lblNameFlavor";
             this.lblNameFlavor.Size = new System.Drawing.Size(267, 30);
             this.lblNameFlavor.TabIndex = 34;
@@ -196,7 +246,7 @@
             // 
             this.btnContinue.BackColor = System.Drawing.Color.Teal;
             this.btnContinue.Font = new System.Drawing.Font("Elephant", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinue.Location = new System.Drawing.Point(438, 202);
+            this.btnContinue.Location = new System.Drawing.Point(415, 257);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(209, 53);
             this.btnContinue.TabIndex = 31;
@@ -204,24 +254,24 @@
             this.btnContinue.UseVisualStyleBackColor = false;
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
-            // tbxName
+            // tbxDName
             // 
-            this.tbxName.Font = new System.Drawing.Font("Elephant", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxName.Location = new System.Drawing.Point(366, 136);
-            this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(335, 50);
-            this.tbxName.TabIndex = 32;
+            this.tbxDName.Font = new System.Drawing.Font("Elephant", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxDName.Location = new System.Drawing.Point(521, 87);
+            this.tbxDName.Name = "tbxDName";
+            this.tbxDName.Size = new System.Drawing.Size(309, 50);
+            this.tbxDName.TabIndex = 32;
             // 
-            // lblNameInput
+            // lblNameInputTitle
             // 
-            this.lblNameInput.AutoSize = true;
-            this.lblNameInput.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameInput.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblNameInput.Location = new System.Drawing.Point(272, 37);
-            this.lblNameInput.Name = "lblNameInput";
-            this.lblNameInput.Size = new System.Drawing.Size(545, 51);
-            this.lblNameInput.TabIndex = 33;
-            this.lblNameInput.Text = "Please enter in your name:";
+            this.lblNameInputTitle.AutoSize = true;
+            this.lblNameInputTitle.Font = new System.Drawing.Font("Elephant", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameInputTitle.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblNameInputTitle.Location = new System.Drawing.Point(233, 14);
+            this.lblNameInputTitle.Name = "lblNameInputTitle";
+            this.lblNameInputTitle.Size = new System.Drawing.Size(606, 51);
+            this.lblNameInputTitle.TabIndex = 33;
+            this.lblNameInputTitle.Text = "Choose your Operator Names";
             // 
             // lbxPHand
             // 
@@ -231,6 +281,7 @@
             this.lbxPHand.Name = "lbxPHand";
             this.lbxPHand.Size = new System.Drawing.Size(119, 100);
             this.lbxPHand.TabIndex = 24;
+            this.lbxPHand.Visible = false;
             // 
             // lbxDHand
             // 
@@ -240,6 +291,7 @@
             this.lbxDHand.Name = "lbxDHand";
             this.lbxDHand.Size = new System.Drawing.Size(123, 100);
             this.lbxDHand.TabIndex = 23;
+            this.lbxDHand.Visible = false;
             // 
             // lbxDeck
             // 
@@ -318,8 +370,9 @@
             // 
             // pnlDealerField
             // 
+            this.pnlDealerField.Controls.Add(this.lblDDeclaration1);
             this.pnlDealerField.Controls.Add(this.lblDealerName);
-            this.pnlDealerField.Controls.Add(this.lblDDeclaration);
+            this.pnlDealerField.Controls.Add(this.lblDDeclaration2);
             this.pnlDealerField.Controls.Add(this.pnlDealerScore);
             this.pnlDealerField.Controls.Add(this.picDealCard5);
             this.pnlDealerField.Controls.Add(this.picDealCard4);
@@ -331,27 +384,39 @@
             this.pnlDealerField.Size = new System.Drawing.Size(560, 369);
             this.pnlDealerField.TabIndex = 20;
             // 
+            // lblDDeclaration1
+            // 
+            this.lblDDeclaration1.AutoSize = true;
+            this.lblDDeclaration1.BackColor = System.Drawing.Color.Transparent;
+            this.lblDDeclaration1.Font = new System.Drawing.Font("Elephant", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDDeclaration1.Location = new System.Drawing.Point(70, 132);
+            this.lblDDeclaration1.Name = "lblDDeclaration1";
+            this.lblDDeclaration1.Size = new System.Drawing.Size(446, 60);
+            this.lblDDeclaration1.TabIndex = 32;
+            this.lblDDeclaration1.Text = "Congrats, Dealer";
+            this.lblDDeclaration1.Visible = false;
+            // 
             // lblDealerName
             // 
             this.lblDealerName.AutoSize = true;
-            this.lblDealerName.Font = new System.Drawing.Font("Elephant", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDealerName.Location = new System.Drawing.Point(261, 26);
+            this.lblDealerName.Font = new System.Drawing.Font("Elephant", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDealerName.Location = new System.Drawing.Point(261, 36);
             this.lblDealerName.Name = "lblDealerName";
-            this.lblDealerName.Size = new System.Drawing.Size(200, 64);
+            this.lblDealerName.Size = new System.Drawing.Size(147, 47);
             this.lblDealerName.TabIndex = 31;
             this.lblDealerName.Text = "Dealer";
             // 
-            // lblDDeclaration
+            // lblDDeclaration2
             // 
-            this.lblDDeclaration.AutoSize = true;
-            this.lblDDeclaration.BackColor = System.Drawing.Color.Transparent;
-            this.lblDDeclaration.Font = new System.Drawing.Font("Elephant", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDDeclaration.Location = new System.Drawing.Point(76, 151);
-            this.lblDDeclaration.Name = "lblDDeclaration";
-            this.lblDDeclaration.Size = new System.Drawing.Size(345, 155);
-            this.lblDDeclaration.TabIndex = 26;
-            this.lblDDeclaration.Text = "Loss";
-            this.lblDDeclaration.Visible = false;
+            this.lblDDeclaration2.AutoSize = true;
+            this.lblDDeclaration2.BackColor = System.Drawing.Color.Transparent;
+            this.lblDDeclaration2.Font = new System.Drawing.Font("Elephant", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDDeclaration2.Location = new System.Drawing.Point(116, 192);
+            this.lblDDeclaration2.Name = "lblDDeclaration2";
+            this.lblDDeclaration2.Size = new System.Drawing.Size(356, 77);
+            this.lblDDeclaration2.TabIndex = 26;
+            this.lblDDeclaration2.Text = "Your Win";
+            this.lblDDeclaration2.Visible = false;
             // 
             // pnlDealerScore
             // 
@@ -521,7 +586,8 @@
             // 
             // pnlPlayerField
             // 
-            this.pnlPlayerField.Controls.Add(this.lblPDeclaration);
+            this.pnlPlayerField.Controls.Add(this.lblPDeclaration1);
+            this.pnlPlayerField.Controls.Add(this.lblPDeclaration2);
             this.pnlPlayerField.Controls.Add(this.picPlayCard5);
             this.pnlPlayerField.Controls.Add(this.picPlayCard4);
             this.pnlPlayerField.Controls.Add(this.picPlayCard3);
@@ -534,17 +600,29 @@
             this.pnlPlayerField.Size = new System.Drawing.Size(560, 369);
             this.pnlPlayerField.TabIndex = 0;
             // 
-            // lblPDeclaration
+            // lblPDeclaration1
             // 
-            this.lblPDeclaration.AutoSize = true;
-            this.lblPDeclaration.BackColor = System.Drawing.Color.Transparent;
-            this.lblPDeclaration.Font = new System.Drawing.Font("Elephant", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPDeclaration.Location = new System.Drawing.Point(73, 154);
-            this.lblPDeclaration.Name = "lblPDeclaration";
-            this.lblPDeclaration.Size = new System.Drawing.Size(345, 155);
-            this.lblPDeclaration.TabIndex = 25;
-            this.lblPDeclaration.Text = "Loss";
-            this.lblPDeclaration.Visible = false;
+            this.lblPDeclaration1.AutoSize = true;
+            this.lblPDeclaration1.BackColor = System.Drawing.Color.Transparent;
+            this.lblPDeclaration1.Font = new System.Drawing.Font("Elephant", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPDeclaration1.Location = new System.Drawing.Point(57, 139);
+            this.lblPDeclaration1.Name = "lblPDeclaration1";
+            this.lblPDeclaration1.Size = new System.Drawing.Size(437, 60);
+            this.lblPDeclaration1.TabIndex = 27;
+            this.lblPDeclaration1.Text = "Too Bad, Player";
+            this.lblPDeclaration1.Visible = false;
+            // 
+            // lblPDeclaration2
+            // 
+            this.lblPDeclaration2.AutoSize = true;
+            this.lblPDeclaration2.BackColor = System.Drawing.Color.Transparent;
+            this.lblPDeclaration2.Font = new System.Drawing.Font("Elephant", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPDeclaration2.Location = new System.Drawing.Point(96, 198);
+            this.lblPDeclaration2.Name = "lblPDeclaration2";
+            this.lblPDeclaration2.Size = new System.Drawing.Size(352, 77);
+            this.lblPDeclaration2.TabIndex = 25;
+            this.lblPDeclaration2.Text = "Your Loss";
+            this.lblPDeclaration2.Visible = false;
             // 
             // picPlayCard5
             // 
@@ -590,7 +668,7 @@
             // 
             this.lblPlayerName.AutoSize = true;
             this.lblPlayerName.Font = new System.Drawing.Font("Elephant", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerName.Location = new System.Drawing.Point(262, 38);
+            this.lblPlayerName.Location = new System.Drawing.Point(260, 38);
             this.lblPlayerName.Name = "lblPlayerName";
             this.lblPlayerName.Size = new System.Drawing.Size(141, 47);
             this.lblPlayerName.TabIndex = 20;
@@ -630,7 +708,7 @@
             // 
             // picPlayCard1
             // 
-            this.picPlayCard1.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard1.Image")));
+            this.picPlayCard1.Image = global::BlackJack_TWO_Solution.Properties.Resources.PlamentCard;
             this.picPlayCard1.InitialImage = null;
             this.picPlayCard1.Location = new System.Drawing.Point(396, 124);
             this.picPlayCard1.Name = "picPlayCard1";
@@ -724,15 +802,21 @@
         private System.Windows.Forms.Panel pnlDealerScore;
         private System.Windows.Forms.Label lblDealCardScoreTxt;
         private System.Windows.Forms.Label lblDeaCardScoreTitle;
-        private System.Windows.Forms.Label lblPDeclaration;
-        private System.Windows.Forms.Label lblDDeclaration;
-        private System.Windows.Forms.Label lblNameInput;
-        private System.Windows.Forms.TextBox tbxName;
+        private System.Windows.Forms.Label lblPDeclaration2;
+        private System.Windows.Forms.Label lblDDeclaration2;
+        private System.Windows.Forms.Label lblNameInputTitle;
+        private System.Windows.Forms.TextBox tbxDName;
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Panel pnlInputField;
         private System.Windows.Forms.Label lblNameFlavor;
-        private System.Windows.Forms.Label lblPNameTxt;
+        private System.Windows.Forms.Label lblDNameTxt;
         private System.Windows.Forms.Label lblDealerName;
+        private System.Windows.Forms.Label lblPNameInput;
+        private System.Windows.Forms.Label lblDDeclaration1;
+        private System.Windows.Forms.Label lblPDeclaration1;
+        private System.Windows.Forms.Label lblPNameTxt;
+        private System.Windows.Forms.Label lblDNameInput;
+        private System.Windows.Forms.TextBox tbxPName;
     }
 }
 

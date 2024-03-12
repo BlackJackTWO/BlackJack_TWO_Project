@@ -198,36 +198,6 @@
     <None Include="bin\Debug\PNG-cards\CS11.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA4.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA7.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\PNG-cards\DA11.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="bin\Debug\PNG-cards\DJ10.png" />
   </ItemGroup>
   <ItemGroup>
@@ -235,6 +205,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\PNG-cards\DQ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\DS11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\PlamentCard.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
