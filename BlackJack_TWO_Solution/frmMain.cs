@@ -9,6 +9,7 @@ using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace BlackJack_TWO_Solution
@@ -22,11 +23,15 @@ namespace BlackJack_TWO_Solution
         private string _P = "Player";
         private string _D = "Dealer";
 
+        private string _draw;
+
         private int _score = 0;
         private int _PhandIndex;
         private int _DhandIndex;
         private int _Wins;
         private int _Loss;
+
+        public const string imgPath = @"PNG-cards/";
 
         #endregion
 
@@ -64,29 +69,26 @@ namespace BlackJack_TWO_Solution
             mnuFileNew.Enabled = false;
             btnHit.Enabled = false;
             btnStay.Enabled = false;
+
+            lblPlayerName.Text = "Player";
+            lblDealerName.Text = "Dealer";
+
+            
+
         }
 
         #endregion
-
+        //input 2: 194, 37  input 1:441, 0
         #region /*Game Interactions*/
 
         //Grabs player name input
         private void btnContinue_Click(object sender, EventArgs e)
         {
-            lblPNameTxt.Text = tbxName.Text;
+            namePlayer();
+            nameDealer();
 
-            if(lblPNameTxt.Text != string.Empty)
-            {
-                pnlInputField.Visible = false;
-                btnContinue.Visible = false;
-                btnContinue.Enabled = false;
-                tbxName.Visible = false;
-                tbxName.Enabled = false;
-                lblNameInput.Visible = false;
-                lblNameFlavor.Visible = false;
-
-                btnNewMatch.Visible = true;
-            }  
+            clearNameField();
+ 
         }
 
         //Builds new match on click of startup button
@@ -271,6 +273,11 @@ namespace BlackJack_TWO_Solution
                     return;
                 }
 
+                if(int.Parse(lblDealCardScoreTxt.Text) == int.Parse(lblPlayCardScoreTxt.Text))
+                {
+
+                }
+
 
             } while (lbxDHand.Items.Count <= 5);
 
@@ -298,10 +305,12 @@ namespace BlackJack_TWO_Solution
             btnNewMatch.Enabled = false;
             btnNewMatch.Visible = false;
 
-            lblPDeclaration.Visible = false;
-            lblDDeclaration.Visible = false;
+            lblPDeclaration2.Visible = false;
+            lblPDeclaration1.Visible = false;
+            lblDDeclaration2.Visible = false;
+            lblDDeclaration1.Visible = false;
 
-            lblDealerName.Text = "Dealer";
+            lblDealerName.Text = lblDNameTxt.Text;
             lblDealerName.ForeColor = Color.Black;
 
             lblPlayerName.Text = lblPNameTxt.Text;
@@ -473,7 +482,122 @@ namespace BlackJack_TWO_Solution
 
         }
 
+        //Build image deck array
+        public string drawImgDeck(string a)
+        {
+            var img = new List<KeyValuePair<string, string>>();//creating stings of keyvalue pairs.
+            img.Add(new KeyValuePair<string, string>("AA2","AA2.png"));
+            img.Add(new KeyValuePair<string, string>("AA3","AA3.png"));
+            img.Add(new KeyValuePair<string, string>("AA4","AA4.png"));
+            img.Add(new KeyValuePair<string, string>("AA5","AA5.png"));
+            img.Add(new KeyValuePair<string, string>("AA6","AA6.png"));
+            img.Add(new KeyValuePair<string, string>("AA7","AA7.png"));
+            img.Add(new KeyValuePair<string, string>("AA8","AA8.png"));
+            img.Add(new KeyValuePair<string, string>("AA9","AA9.png"));
+            img.Add(new KeyValuePair<string, string>("AA10","AA10.png"));
+            img.Add(new KeyValuePair<string, string>("AJ10","AJ10.png"));
+            img.Add(new KeyValuePair<string, string>("AQ10","AQ10.png"));
+            img.Add(new KeyValuePair<string, string>("AK10","AK10.png"));
+            img.Add(new KeyValuePair<string, string>("AS11","AS11.png"));
+            img.Add(new KeyValuePair<string, string>("BB2","BB2.png"));
+            img.Add(new KeyValuePair<string, string>("BB3","BB3.png"));
+            img.Add(new KeyValuePair<string, string>("BB4","BB4.png"));
+            img.Add(new KeyValuePair<string, string>("BB5","BB5.png"));
+            img.Add(new KeyValuePair<string, string>("BB6","BB6.png"));
+            img.Add(new KeyValuePair<string, string>("BB7","BB7.png"));
+            img.Add(new KeyValuePair<string, string>("BB8","BB8.png"));
+            img.Add(new KeyValuePair<string, string>("BB9","BB9.png"));
+            img.Add(new KeyValuePair<string, string>("BB10","BB10.png"));
+            img.Add(new KeyValuePair<string, string>("BJ10","BJ10.png"));
+            img.Add(new KeyValuePair<string, string>("BQ10","BQ10.png"));
+            img.Add(new KeyValuePair<string, string>("BK10","BK10.png"));
+            img.Add(new KeyValuePair<string, string>("BS11","BS11.png"));
+            img.Add(new KeyValuePair<string, string>("CC2","CC2.png"));
+            img.Add(new KeyValuePair<string, string>("CC3","CC3.png"));
+            img.Add(new KeyValuePair<string, string>("CC4","CC4.png"));
+            img.Add(new KeyValuePair<string, string>("CC5","CC5.png"));
+            img.Add(new KeyValuePair<string, string>("CC6","CC6.png"));
+            img.Add(new KeyValuePair<string, string>("CC7","CC7.png"));
+            img.Add(new KeyValuePair<string, string>("CC8","CC8.png"));
+            img.Add(new KeyValuePair<string, string>("CC9","CC9.png"));
+            img.Add(new KeyValuePair<string, string>("CC10","CC10.png"));
+            img.Add(new KeyValuePair<string, string>("CJ10","CJ10.png"));
+            img.Add(new KeyValuePair<string, string>("CQ10","CQ10.png"));
+            img.Add(new KeyValuePair<string, string>("CK10","CK10.png"));
+            img.Add(new KeyValuePair<string, string>("CS11","CS11.png"));
+            img.Add(new KeyValuePair<string, string>("DD2","DD2.png"));
+            img.Add(new KeyValuePair<string, string>("DD3","DD3.png"));
+            img.Add(new KeyValuePair<string, string>("DD4","DD4.png"));
+            img.Add(new KeyValuePair<string, string>("DD5","DD5.png"));
+            img.Add(new KeyValuePair<string, string>("DD6","DD6.png"));
+            img.Add(new KeyValuePair<string, string>("DD7","DD7.png"));
+            img.Add(new KeyValuePair<string, string>("DD8","DD8.png"));
+            img.Add(new KeyValuePair<string, string>("DD9","DD9.png"));
+            img.Add(new KeyValuePair<string, string>("DD10","DD10.png"));
+            img.Add(new KeyValuePair<string, string>("DJ10","DJ10.png"));
+            img.Add(new KeyValuePair<string, string>("DQ10","DQ10.png"));
+            img.Add(new KeyValuePair<string, string>("DK10","DK10.png"));
+            img.Add(new KeyValuePair<string, string>("DS11","DS11.png"));
 
+            var match = img.Find(kvp => kvp.Key == a);
+            //match[1] /*= img.Where(kvp => kvp.Value == match)*/;
+            //a = match.ToString();
+            return match.Value.ToString();
+
+        }
+
+        //Ties image to drawn card
+        public void makeCard(string a, string b)
+        {
+            if(b == "Player")
+            {
+                if (_PhandIndex == 0)
+                {
+                    picPlayCard1.Image = Image.FromFile(imgPath + a);
+                    
+                }
+                if (_PhandIndex == 1)
+                {
+                    picPlayCard2.Image = Image.FromFile(imgPath + a);
+                }
+                if (_PhandIndex == 2)
+                {
+                    picPlayCard3.Image = Image.FromFile(imgPath + a);
+                }
+                if (_PhandIndex == 3)
+                {
+                    picPlayCard4.Image = Image.FromFile(imgPath + a);
+                }
+                if (_PhandIndex == 4)
+                {
+                    picPlayCard5.Image = Image.FromFile(imgPath + a);
+                }
+
+            }
+            if(b == "Dealer")
+            {
+                if(_DhandIndex == 0)
+                {
+                   picDealCard1.Image = Image.FromFile(imgPath + a);
+                }
+                if (_DhandIndex == 1)
+                {
+                    picDealCard2.Image = Image.FromFile(imgPath + a);
+                }
+                if (_DhandIndex == 2)
+                {
+                    picDealCard3.Image = Image.FromFile(imgPath + a);
+                }
+                if (_DhandIndex == 3)
+                {
+                    picDealCard4.Image = Image.FromFile(imgPath + a);
+                }
+                if (_DhandIndex == 4)
+                {
+                    picDealCard5.Image = Image.FromFile(imgPath + a);
+                }
+            }
+        }
 
         #endregion
 
@@ -566,52 +690,20 @@ namespace BlackJack_TWO_Solution
             return face = trim;
         }
 
-        //Catagorizes value into ranks
-        public string sortValue(string face, string a) // REwork into picture variable list
-        {
-            string sCheck = string.Empty;
-
-            if (sCheck.StartsWith("AS") ||
-                sCheck.StartsWith("BS") ||
-                sCheck.StartsWith("CS") ||
-                sCheck.StartsWith("DS"))
-            {
-                face = sCheck + "S";
-            }
-            else if (sCheck.StartsWith("AJ") ||
-                     sCheck.StartsWith("BJ") ||
-                     sCheck.StartsWith("CJ") ||
-                     sCheck.StartsWith("DJ"))
-            {
-                face = sCheck + "J";
-            }
-            else if (sCheck.StartsWith("AQ") ||
-                     sCheck.StartsWith("BQ") ||
-                     sCheck.StartsWith("CQ") ||
-                     sCheck.StartsWith("DQ"))
-            {
-                face = sCheck + "Q";
-            }
-            else if (sCheck.StartsWith("AK") ||
-                     sCheck.StartsWith("BK") ||
-                     sCheck.StartsWith("CK") ||
-                     sCheck.StartsWith("DK"))
-            {
-                face = sCheck + "K";
-            }
-            return face;
-        }
-
         //Evaluates the value based on ranking
         public int evaluateCardScore(ref string face, ref int score, string a)
         {
-            
+             
             if (a == "Player")
             {
                 face = lbxPHand.Items[_PhandIndex].ToString();
+
                 int temp = int.Parse(lblPlayCardScoreTxt.Text); 
                 if (face.Contains("S"))
                 {
+                    _draw =  drawImgDeck(face);
+                    makeCard(_draw, _P);
+
                     face = "11";
                     score = 11;
 
@@ -619,14 +711,21 @@ namespace BlackJack_TWO_Solution
                     {
                         score = 1;
                     }
+                    
                 }
                 else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))
                 {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _P);
+
                     face = "10";
                     score = 10;
                 }
                 else
                 {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _P);
+
                     face = filterCard(face, a);
                 }
 
@@ -634,9 +733,13 @@ namespace BlackJack_TWO_Solution
             if (a == "Dealer")
             {
                 face = lbxDHand.Items[_DhandIndex].ToString();
+
                 int temp = int.Parse(lblDealCardScoreTxt.Text);
                 if (face.Contains("S"))
-                {                    
+                {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _D);
+
                     face = "11";
                     score = 11;
 
@@ -648,11 +751,17 @@ namespace BlackJack_TWO_Solution
                 }
                 else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))
                 {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _D);
+
                     face = "10";
                     score = 10;
                 }
                 else
                 {
+                    _draw = drawImgDeck(face);
+                    makeCard(_draw, _D);
+
                     face = filterCard(face, a);
                 }
 
@@ -668,28 +777,75 @@ namespace BlackJack_TWO_Solution
         //Changes declarations and applies tallies to the winners round score
         public void Win(int a)
         {
-            lblPDeclaration.Visible = true;
-            lblPDeclaration.Text = "WIN";
-            lblPDeclaration.ForeColor = Color.Green;
+            lblPDeclaration1.Visible = true;
+            lblPDeclaration1.Text = "Congrats, " + lblPlayerName.Text;
+            lblPDeclaration1.ForeColor = Color.Green;
 
-            lblDDeclaration.Visible = true;
-            lblDDeclaration.Text = "LOSS";
-            lblDDeclaration.ForeColor = Color.Red; 
+            lblPDeclaration2.Visible = true;
+            lblPDeclaration2.Text = "Your WIN";
+            lblPDeclaration2.ForeColor = Color.Green;
+
+            lblDDeclaration1.Visible = true;
+            lblDDeclaration1.Text = "Too Bad, " + lblDealerName;
+            lblDDeclaration1.ForeColor = Color.Red;
+
+            lblDDeclaration2.Visible = true;
+            lblDDeclaration2.Text = "Your LOSS";
+            lblDDeclaration2.ForeColor = Color.Red;
         }
 
         public void Loss(int a)
         {
-            lblPDeclaration.Visible = true;
-            lblPDeclaration.Text = "LOSS";
-            lblPDeclaration.ForeColor = Color.Red;
+            lblPDeclaration1.Visible = true;
+            lblPDeclaration1.Text = "Too Bad, " + lblPlayerName.Text;
+            lblPDeclaration1.ForeColor = Color.Red;
 
-            lblDDeclaration.Visible = true;
-            lblDDeclaration.Text = "WIN";
-            lblDDeclaration.ForeColor = Color.Green;            
+            lblPDeclaration2.Visible = true;
+            lblPDeclaration2.Text = "Your LOSS";
+            lblPDeclaration2.ForeColor = Color.Red;
+
+            lblDDeclaration1.Visible = true;
+            lblDDeclaration1.Text = "Congrats, " + lblDealerName.Text;
+            lblDDeclaration1.ForeColor = Color.Green;
+
+            lblDDeclaration2.Visible = true;
+            lblDDeclaration2.Text = "Your WIN";
+            lblDDeclaration2.ForeColor = Color.Green;            
         }
 
-        #endregion
+        public void namePlayer()
+        {
+            lblPNameTxt.Text = tbxPName.Text;
+            lblPlayerName.Text = lblPNameTxt.Text;   
+        }
 
+        public void nameDealer()
+        {
+            lblDNameTxt.Text = tbxDName.Text;
+            lblDealerName.Text = lblDNameTxt.Text;
+
+        }
+
+        public void clearNameField()
+        {
+            pnlInputField.Visible = false;
+            btnContinue.Visible = false;
+            btnContinue.Enabled = false;
+            tbxDName.Visible = false;
+            tbxDName.Enabled = false;
+            tbxPName.Visible = false;
+            tbxPName.Enabled = false;
+            lblPNameTxt.Visible = false;
+            lblDNameTxt.Visible = false;
+            lblPNameInput.Visible = false;
+            lblDNameInput.Visible = false;
+            lblNameInputTitle.Visible = false;
+            lblNameFlavor.Visible = false;
+            btnNewMatch.Visible = true;
+        }
+
+
+        #endregion
 
     }
 

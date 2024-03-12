@@ -59,17 +59,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -78,6 +79,138 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AA10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AJ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AK10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AQ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\AS11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BB10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BJ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BK10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BQ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\BS11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CC10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CJ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CK10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CQ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\CS11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\DJ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\DK10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\DQ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\DS11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\PNG-cards\PlamentCard.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
