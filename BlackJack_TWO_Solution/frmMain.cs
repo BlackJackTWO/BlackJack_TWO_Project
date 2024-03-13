@@ -27,6 +27,7 @@ namespace BlackJack_TWO_Solution
        **Setup for basic cloning, for card img use need to uncomment makeCard(x4) in 
          evaluateCardScore(), and the picPlayCard(x5) and picDealCard(x5)**
        **To hid listbox hands you need to go to visual display and mark visibilty false**
+       */
 
 
     public partial class frmMain : Form
