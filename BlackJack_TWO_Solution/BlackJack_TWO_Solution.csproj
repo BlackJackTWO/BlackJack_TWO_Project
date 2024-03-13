@@ -315,6 +315,8 @@
     <Content Include="Resources\DS11.png" />
     <Content Include="Resources\PlamentCard.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="PNG-cards\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
