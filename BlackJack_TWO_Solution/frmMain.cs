@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Windows.Forms;
+using BlackJack_TWO_Solution.Properties;
 
 namespace BlackJack_TWO_Solution
 {
@@ -18,7 +19,7 @@ namespace BlackJack_TWO_Solution
     public partial class frmMain : Form
     {
         #region /*Global Variables*/
-        
+
         private string _face;
         private string _P = "Player";
         private string _D = "Dealer";
@@ -31,7 +32,7 @@ namespace BlackJack_TWO_Solution
         private int _Wins;
         private int _Loss;
 
-        public const string imgPath = @"PNG-cards/";
+        public const string imgPath = @"./PNG-cards/";
 
         #endregion
 
@@ -441,7 +442,6 @@ namespace BlackJack_TWO_Solution
         //Clears cards from hand
         public void clearHand(string a)
         {
-            string defaultcard = "";
             if(a == "Player")
             {
                 do
@@ -503,58 +503,58 @@ namespace BlackJack_TWO_Solution
         public string drawImgDeck(string a)
         {
             var img = new List<KeyValuePair<string, string>>();//creating stings of keyvalue pairs.
-            img.Add(new KeyValuePair<string, string>("AA2","AA2.png"));
-            img.Add(new KeyValuePair<string, string>("AA3","AA3.png"));
-            img.Add(new KeyValuePair<string, string>("AA4","AA4.png"));
-            img.Add(new KeyValuePair<string, string>("AA5","AA5.png"));
-            img.Add(new KeyValuePair<string, string>("AA6","AA6.png"));
-            img.Add(new KeyValuePair<string, string>("AA7","AA7.png"));
-            img.Add(new KeyValuePair<string, string>("AA8","AA8.png"));
-            img.Add(new KeyValuePair<string, string>("AA9","AA9.png"));
-            img.Add(new KeyValuePair<string, string>("AA10","AA10.png"));
-            img.Add(new KeyValuePair<string, string>("AJ10","AJ10.png"));
-            img.Add(new KeyValuePair<string, string>("AQ10","AQ10.png"));
-            img.Add(new KeyValuePair<string, string>("AK10","AK10.png"));
-            img.Add(new KeyValuePair<string, string>("AS11","AS11.png"));
-            img.Add(new KeyValuePair<string, string>("BB2","BB2.png"));
-            img.Add(new KeyValuePair<string, string>("BB3","BB3.png"));
-            img.Add(new KeyValuePair<string, string>("BB4","BB4.png"));
-            img.Add(new KeyValuePair<string, string>("BB5","BB5.png"));
-            img.Add(new KeyValuePair<string, string>("BB6","BB6.png"));
-            img.Add(new KeyValuePair<string, string>("BB7","BB7.png"));
-            img.Add(new KeyValuePair<string, string>("BB8","BB8.png"));
-            img.Add(new KeyValuePair<string, string>("BB9","BB9.png"));
-            img.Add(new KeyValuePair<string, string>("BB10","BB10.png"));
-            img.Add(new KeyValuePair<string, string>("BJ10","BJ10.png"));
-            img.Add(new KeyValuePair<string, string>("BQ10","BQ10.png"));
-            img.Add(new KeyValuePair<string, string>("BK10","BK10.png"));
-            img.Add(new KeyValuePair<string, string>("BS11","BS11.png"));
-            img.Add(new KeyValuePair<string, string>("CC2","CC2.png"));
-            img.Add(new KeyValuePair<string, string>("CC3","CC3.png"));
-            img.Add(new KeyValuePair<string, string>("CC4","CC4.png"));
-            img.Add(new KeyValuePair<string, string>("CC5","CC5.png"));
-            img.Add(new KeyValuePair<string, string>("CC6","CC6.png"));
-            img.Add(new KeyValuePair<string, string>("CC7","CC7.png"));
-            img.Add(new KeyValuePair<string, string>("CC8","CC8.png"));
-            img.Add(new KeyValuePair<string, string>("CC9","CC9.png"));
-            img.Add(new KeyValuePair<string, string>("CC10","CC10.png"));
-            img.Add(new KeyValuePair<string, string>("CJ10","CJ10.png"));
-            img.Add(new KeyValuePair<string, string>("CQ10","CQ10.png"));
-            img.Add(new KeyValuePair<string, string>("CK10","CK10.png"));
-            img.Add(new KeyValuePair<string, string>("CS11","CS11.png"));
-            img.Add(new KeyValuePair<string, string>("DD2","DD2.png"));
-            img.Add(new KeyValuePair<string, string>("DD3","DD3.png"));
-            img.Add(new KeyValuePair<string, string>("DD4","DD4.png"));
-            img.Add(new KeyValuePair<string, string>("DD5","DD5.png"));
-            img.Add(new KeyValuePair<string, string>("DD6","DD6.png"));
-            img.Add(new KeyValuePair<string, string>("DD7","DD7.png"));
-            img.Add(new KeyValuePair<string, string>("DD8","DD8.png"));
-            img.Add(new KeyValuePair<string, string>("DD9","DD9.png"));
-            img.Add(new KeyValuePair<string, string>("DD10","DD10.png"));
-            img.Add(new KeyValuePair<string, string>("DJ10","DJ10.png"));
-            img.Add(new KeyValuePair<string, string>("DQ10","DQ10.png"));
-            img.Add(new KeyValuePair<string, string>("DK10","DK10.png"));
-            img.Add(new KeyValuePair<string, string>("DS11","DS11.png"));
+            img.Add(new KeyValuePair<string, string>("AA2", "AA2.png"));
+            img.Add(new KeyValuePair<string, string>("AA3", "AA3.png"));
+            img.Add(new KeyValuePair<string, string>("AA4", "AA4.png"));
+            img.Add(new KeyValuePair<string, string>("AA5", "AA5.png"));
+            img.Add(new KeyValuePair<string, string>("AA6", "AA6.png"));
+            img.Add(new KeyValuePair<string, string>("AA7", "AA7.png"));
+            img.Add(new KeyValuePair<string, string>("AA8", "AA8.png"));
+            img.Add(new KeyValuePair<string, string>("AA9", "AA9.png"));
+            img.Add(new KeyValuePair<string, string>("AA10", "AA10.png"));
+            img.Add(new KeyValuePair<string, string>("AJ10", "AJ10.png"));
+            img.Add(new KeyValuePair<string, string>("AQ10", "AQ10.png"));
+            img.Add(new KeyValuePair<string, string>("AK10", "AK10.png"));
+            img.Add(new KeyValuePair<string, string>("AS11", "AS11.png"));
+            img.Add(new KeyValuePair<string, string>("BB2", "BB2.png"));
+            img.Add(new KeyValuePair<string, string>("BB3", "BB3.png"));
+            img.Add(new KeyValuePair<string, string>("BB4", "BB4.png"));
+            img.Add(new KeyValuePair<string, string>("BB5", "BB5.png"));
+            img.Add(new KeyValuePair<string, string>("BB6", "BB6.png"));
+            img.Add(new KeyValuePair<string, string>("BB7", "BB7.png"));
+            img.Add(new KeyValuePair<string, string>("BB8", "BB8.png"));
+            img.Add(new KeyValuePair<string, string>("BB9", "BB9.png"));
+            img.Add(new KeyValuePair<string, string>("BB10", "BB10.png"));
+            img.Add(new KeyValuePair<string, string>("BJ10", "BJ10.png"));
+            img.Add(new KeyValuePair<string, string>("BQ10", "BQ10.png"));
+            img.Add(new KeyValuePair<string, string>("BK10", "BK10.png"));
+            img.Add(new KeyValuePair<string, string>("BS11", "BS11.png"));
+            img.Add(new KeyValuePair<string, string>("CC2", "CC2.png"));
+            img.Add(new KeyValuePair<string, string>("CC3", "CC3.png"));
+            img.Add(new KeyValuePair<string, string>("CC4", "CC4.png"));
+            img.Add(new KeyValuePair<string, string>("CC5", "CC5.png"));
+            img.Add(new KeyValuePair<string, string>("CC6", "CC6.png"));
+            img.Add(new KeyValuePair<string, string>("CC7", "CC7.png"));
+            img.Add(new KeyValuePair<string, string>("CC8", "CC8.png"));
+            img.Add(new KeyValuePair<string, string>("CC9", "CC9.png"));
+            img.Add(new KeyValuePair<string, string>("CC10", "CC10.png"));
+            img.Add(new KeyValuePair<string, string>("CJ10", "CJ10.png"));
+            img.Add(new KeyValuePair<string, string>("CQ10", "CQ10.png"));
+            img.Add(new KeyValuePair<string, string>("CK10", "CK10.png"));
+            img.Add(new KeyValuePair<string, string>("CS11", "CS11.png"));
+            img.Add(new KeyValuePair<string, string>("DD2", "DD2.png"));
+            img.Add(new KeyValuePair<string, string>("DD3", "DD3.png"));
+            img.Add(new KeyValuePair<string, string>("DD4", "DD4.png"));
+            img.Add(new KeyValuePair<string, string>("DD5", "DD5.png"));
+            img.Add(new KeyValuePair<string, string>("DD6", "DD6.png"));
+            img.Add(new KeyValuePair<string, string>("DD7", "DD7.png"));
+            img.Add(new KeyValuePair<string, string>("DD8", "DD8.png"));
+            img.Add(new KeyValuePair<string, string>("DD9", "DD9.png"));
+            img.Add(new KeyValuePair<string, string>("DD10", "DD10.png"));
+            img.Add(new KeyValuePair<string, string>("DJ10", "DJ10.png"));
+            img.Add(new KeyValuePair<string, string>("DQ10", "DQ10.png"));
+            img.Add(new KeyValuePair<string, string>("DK10", "DK10.png"));
+            img.Add(new KeyValuePair<string, string>("DS11", "DS11.png"));
 
             var match = img.Find(kvp => kvp.Key == a);
             //match[1] /*= img.Where(kvp => kvp.Value == match)*/;
