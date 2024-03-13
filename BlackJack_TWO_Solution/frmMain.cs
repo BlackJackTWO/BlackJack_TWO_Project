@@ -441,6 +441,7 @@ namespace BlackJack_TWO_Solution
         //Clears cards from hand
         public void clearHand(string a)
         {
+            string defaultcard = "";
             if(a == "Player")
             {
                 do
@@ -450,7 +451,13 @@ namespace BlackJack_TWO_Solution
                         removeCard(_P);
                         _PhandIndex--;
                     }
-                } while (lbxPHand.Items.Count > 0 && lbxDHand.Items.Count <= 5);
+                } while (lbxPHand.Items.Count > 0 && lbxPHand.Items.Count <= 5);
+
+                picPlayCard1.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picPlayCard2.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picPlayCard3.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picPlayCard4.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picPlayCard5.Image = Image.FromFile(imgPath + "PlamentCard.png");
             }
 
             if (a == "Dealer")
@@ -463,8 +470,14 @@ namespace BlackJack_TWO_Solution
                         _DhandIndex--;
                     }
                 } while (lbxDHand.Items.Count > 0 && lbxDHand.Items.Count <= 5);
+
+                picDealCard1.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picDealCard2.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picDealCard3.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picDealCard4.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picDealCard5.Image = Image.FromFile(imgPath + "PlamentCard.png");
             }
-            
+
         }
 
         //Declares score
@@ -830,6 +843,26 @@ namespace BlackJack_TWO_Solution
             lblDealerName.Text = lblDNameTxt.Text;
 
         }
+
+
+        public void clearNameField()
+        {
+            pnlInputField.Visible = false;
+            btnContinue.Visible = false;
+            btnContinue.Enabled = false;
+            tbxDName.Visible = false;
+            tbxDName.Enabled = false;
+            tbxPName.Visible = false;
+            tbxPName.Enabled = false;
+            lblPNameTxt.Visible = false;
+            lblDNameTxt.Visible = false;
+            lblPNameInput.Visible = false;
+            lblDNameInput.Visible = false;
+            lblNameInputTitle.Visible = false;
+            lblNameFlavor.Visible = false;
+            btnNewMatch.Visible = true;
+        }
+
 
         #endregion
 
