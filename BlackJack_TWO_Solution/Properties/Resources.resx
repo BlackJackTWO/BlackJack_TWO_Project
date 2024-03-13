@@ -118,166 +118,163 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BB9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DD4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DD3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BB7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DD7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AK10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AA8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DD2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AA4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DD10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DQ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DQ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AA5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BB3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DD8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BB10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PlamentCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\PlamentCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CJ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CJ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BB6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DD6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BB8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BJ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BJ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DJ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DJ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DK10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BB5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AA9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BB4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AA10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BQ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BQ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BK10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AA7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CC7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CC7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CQ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CQ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\AA10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\AA2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AA3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\AA3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DD9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AA4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AA4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BB2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\BB2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AA5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AA5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AA6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AA6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\AA6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AQ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AQ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AA7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AA7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AA8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AA8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AA9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AA9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AJ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\AJ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\AJ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DD5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\DD5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AK10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AQ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AQ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BB9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BB9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BJ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BJ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BK10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BQ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BQ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CC9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CC9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CJ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CJ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\CK10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\CK10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PlamentCard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\PNG-cards\PlamentCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CQ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CQ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DD9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DD9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DJ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DJ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DK10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DK10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DQ10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DQ10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlamentCard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlamentCard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
