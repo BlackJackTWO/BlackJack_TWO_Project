@@ -16,6 +16,19 @@ using BlackJack_TWO_Solution.Properties;
 namespace BlackJack_TWO_Solution
 {
     //input 2: 194, 37  input 1:441, 0
+
+    /*
+          Programming I - IT111                                BlackJack_TWO_Solution
+          Todd Holloman           Riley Hill          Blake Hunt         Hunter Smith                          
+
+         Comment - 
+          in order to have working card facing you need to clone using GitHub Desktop, 
+          then use Visual studio to open. 
+       **Setup for basic cloning, for card img use need to uncomment makeCard(x4) in 
+         evaluateCardScore(), and the picPlayCard(x5) and picDealCard(x5)**
+       **To hid listbox hands you need to go to visual display and mark visibilty false**
+
+
     public partial class frmMain : Form
     {
         #region /*Global Variables*/
