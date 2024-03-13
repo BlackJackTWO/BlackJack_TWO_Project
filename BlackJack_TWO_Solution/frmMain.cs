@@ -16,6 +16,19 @@ using BlackJack_TWO_Solution.Properties;
 namespace BlackJack_TWO_Solution
 {
     //input 2: 194, 37  input 1:441, 0
+
+    /*
+          Programming I - IT111                                BlackJack_TWO_Solution
+          Todd Holloman           Riley Hill          Blake Hunt         Hunter Smith                          
+
+         Comment - 
+          in order to have working card facing you need to clone using GitHub Desktop, 
+          then use Visual studio to open. 
+       **Setup for basic cloning, for card img use need to uncomment makeCard(x4) in 
+         evaluateCardScore(), and the picPlayCard(x5) and picDealCard(x5)**
+       **To hid listbox hands you need to go to visual display and mark visibilty false**
+
+
     public partial class frmMain : Form
     {
         #region /*Global Variables*/
@@ -32,7 +45,7 @@ namespace BlackJack_TWO_Solution
         private int _Wins;
         private int _Loss;
 
-        public const string imgPath = @"./PNG-cards/";
+        public const string imgPath = @"./Resources/";
 
         #endregion
 
@@ -453,11 +466,11 @@ namespace BlackJack_TWO_Solution
                     }
                 } while (lbxPHand.Items.Count > 0 && lbxPHand.Items.Count <= 5);
 
-                picPlayCard1.Image = Image.FromFile(imgPath + "PlamentCard.png");
-                picPlayCard2.Image = Image.FromFile(imgPath + "PlamentCard.png");
-                picPlayCard3.Image = Image.FromFile(imgPath + "PlamentCard.png");
-                picPlayCard4.Image = Image.FromFile(imgPath + "PlamentCard.png");
-                picPlayCard5.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picPlayCard1.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picPlayCard2.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picPlayCard3.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picPlayCard4.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picPlayCard5.Image = Image.FromFile(imgPath + "PlamentCard.png");
             }
 
             if (a == "Dealer")
@@ -471,11 +484,11 @@ namespace BlackJack_TWO_Solution
                     }
                 } while (lbxDHand.Items.Count > 0 && lbxDHand.Items.Count <= 5);
 
-                picDealCard1.Image = Image.FromFile(imgPath + "PlamentCard.png");
-                picDealCard2.Image = Image.FromFile(imgPath + "PlamentCard.png");
-                picDealCard3.Image = Image.FromFile(imgPath + "PlamentCard.png");
-                picDealCard4.Image = Image.FromFile(imgPath + "PlamentCard.png");
-                picDealCard5.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picDealCard1.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picDealCard2.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picDealCard3.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picDealCard4.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                //picDealCard5.Image = Image.FromFile(imgPath + "PlamentCard.png");
             }
 
         }
@@ -734,7 +747,7 @@ namespace BlackJack_TWO_Solution
                 else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))// Jack / Queen / King       
                 {
                     _draw = drawImgDeck(face);                                                 
-                    makeCard(_draw, _P);                                                       
+                    //makeCard(_draw, _P);                                                       
 
                     face = "10";                                                               
                     score = 10;                                                                
@@ -742,7 +755,7 @@ namespace BlackJack_TWO_Solution
                 else // <---                <---                <---                <---// Family cards (2-10)                                                                          
                 {
                     _draw = drawImgDeck(face);                                                 
-                    makeCard(_draw, _P);                                                       
+                    //makeCard(_draw, _P);                                                       
 
                     face = filterCard(face, a);                                                
                 }
@@ -757,7 +770,7 @@ namespace BlackJack_TWO_Solution
                 {
                     /*Imaging*/// <---                <---        // Applies an image based on the Id Key
                     _draw = drawImgDeck(face);                                                 
-                    makeCard(_draw, _D);                                                       
+                    //makeCard(_draw, _D);                                                       
 
                     face = "11";                                                               
                     score = 11;                                                                
@@ -771,7 +784,7 @@ namespace BlackJack_TWO_Solution
                 else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))// Jack / Queen / King
                 {
                     _draw = drawImgDeck(face);
-                    makeCard(_draw, _D);
+                    //makeCard(_draw, _D);
 
                     face = "10";
                     score = 10;
@@ -779,7 +792,7 @@ namespace BlackJack_TWO_Solution
                 else // <---                <---                <---                <---// Family cards (2-10)
                 {
                     _draw = drawImgDeck(face);
-                    makeCard(_draw, _D);
+                    //makeCard(_draw, _D);
 
                     face = filterCard(face, a);
                 }
