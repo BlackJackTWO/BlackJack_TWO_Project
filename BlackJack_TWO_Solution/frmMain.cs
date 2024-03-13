@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace BlackJack_TWO_Solution
 {
-    //image.fromfile[]
+    //input 2: 194, 37  input 1:441, 0
     public partial class frmMain : Form
     {
         #region /*Global Variables*/
@@ -42,43 +42,47 @@ namespace BlackJack_TWO_Solution
 
         #region /*Game Start Up*/
 
-        // Build game board layout at beginnign of the game
+        // Build game board layout at beginnig of the game
         private void frmMain_Load(object sender, EventArgs e)
         {
 
-            pnlPlayerRound.Visible = false;
-            pnlDealerRound.Visible = false;
+            /*Game Board*/ 
+
+            /*Visibility*/
+            pnlPlayerRound.Visible = false; // <--- Clears the board of the fields
+            pnlDealerRound.Visible = false; //      and buttons
             pnlPlayerField.Visible = false;
             pnlDealerField.Visible = false;
             btnHit.Visible = false;
             btnStay.Visible = false;
-            btnNewMatch.Visible = false;
 
-            pnlPlayerRound.BorderStyle = BorderStyle.Fixed3D;
-            pnlPlayerField.BorderStyle = BorderStyle.Fixed3D;
-            pnlDealerRound.BorderStyle = BorderStyle.Fixed3D;
+            btnNewMatch.Visible = false; // <--- Hides the "New Match" button
+
+            /*Field Borders*/
+            pnlPlayerRound.BorderStyle = BorderStyle.Fixed3D; // <--- Sets a border to help determin
+            pnlPlayerField.BorderStyle = BorderStyle.Fixed3D; //      the boundries of each section
+            pnlDealerRound.BorderStyle = BorderStyle.Fixed3D; //      for each operators field and round
             pnlDealerField.BorderStyle = BorderStyle.Fixed3D;
 
-            lblDealCardScoreTxt.Text = "0";
+            /*Scores & Rounds*/
+            lblDealCardScoreTxt.Text = "0"; // <--- Sets the score total for both Rounds and scores
             lblPlayCardScoreTxt.Text = "0";
             lblDealRoundScr.Text = "0";
             lblPlayRoundScr.Text = "0";
 
-
-            mnuFileReset.Enabled = false;
+            /*Interaction Control*/
+            mnuFileReset.Enabled = false; // <--- Disables controls to the field
             mnuFileNew.Enabled = false;
             btnHit.Enabled = false;
             btnStay.Enabled = false;
 
-            lblPlayerName.Text = "Player";
-            lblDealerName.Text = "Dealer";
-
-            
-
+            /*Declarations*/
+            lblPlayerName.Text = "Player"; // <--- Resets the Names of operastors to default
+            lblDealerName.Text = "Dealer";            
         }
 
         #endregion
-        //input 2: 194, 37  input 1:441, 0
+       
         #region /*Game Interactions*/
 
         //Grabs player name input
@@ -293,7 +297,7 @@ namespace BlackJack_TWO_Solution
 
         #region /*Game Building*/
 
-        //Builds fields and brings buttons into view
+        //Builds fields and brings buttons into view on game board
         public void Initialize()
         {
             _PhandIndex = 0;
@@ -482,7 +486,7 @@ namespace BlackJack_TWO_Solution
 
         }
 
-        //Build image deck array
+        //Build image deck KeyValuePair list
         public string drawImgDeck(string a)
         {
             var img = new List<KeyValuePair<string, string>>();//creating stings of keyvalue pairs.
@@ -685,71 +689,73 @@ namespace BlackJack_TWO_Solution
         {
             string trim = string.Empty;
 
-            char[] rank = { 'A', 'B', 'C', 'D', 'J', 'Q', 'K', 'S' };
-            trim = face.Trim(rank);
+            char[] rank = { 'A', 'B', 'C', 'D', 'J', 'Q', 'K', 'S' }; // < ---  //  Builds a char[] to use to identify all 
+                                                                                //  character that will need to be truncated
+            trim = face.Trim(rank); // <--- Truncates identified characters//  
             return face = trim;
         }
 
-        //Evaluates the value based on ranking
+        //Evaluates the score value based on ranking of cards
         public int evaluateCardScore(ref string face, ref int score, string a)
         {
              
             if (a == "Player")
             {
                 face = lbxPHand.Items[_PhandIndex].ToString();
-
-                int temp = int.Parse(lblPlayCardScoreTxt.Text); 
-                if (face.Contains("S"))
+                int temp = int.Parse(lblPlayCardScoreTxt.Text);
+               
+                //               <--- Filters card id key to determine the score by rank it is //                                  
+                if (face.Contains("S"))// <---                <---                <---   // Ace                                                         
                 {
-                    _draw =  drawImgDeck(face);
-                    makeCard(_draw, _P);
+                    /*Imaging*/// <---                <---        // Applies an image based on the Id Key
+                    _draw =  drawImgDeck(face);                                               
+                    makeCard(_draw, _P);                                                       
 
-                    face = "11";
-                    score = 11;
+                    face = "11";                                                               
+                    score = 11;                                                                
 
-                    if (temp > 11 && face == "11")
+                    if (temp > 11 && face == "11")                                             
                     {
-                        score = 1;
-                    }
-                    
-                }
-                else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))
+                        score = 1;                                                             
+                    }                                    }
+                else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))// Jack / Queen / King       
                 {
-                    _draw = drawImgDeck(face);
-                    makeCard(_draw, _P);
+                    _draw = drawImgDeck(face);                                                 
+                    makeCard(_draw, _P);                                                       
 
-                    face = "10";
-                    score = 10;
+                    face = "10";                                                               
+                    score = 10;                                                                
                 }
-                else
+                else // <---                <---                <---                <---// Family cards (2-10)                                                                          
                 {
-                    _draw = drawImgDeck(face);
-                    makeCard(_draw, _P);
+                    _draw = drawImgDeck(face);                                                 
+                    makeCard(_draw, _P);                                                       
 
-                    face = filterCard(face, a);
+                    face = filterCard(face, a);                                                
                 }
 
             }
-            if (a == "Dealer")
+            if (a == "Dealer")                                                                 
             {
-                face = lbxDHand.Items[_DhandIndex].ToString();
-
-                int temp = int.Parse(lblDealCardScoreTxt.Text);
-                if (face.Contains("S"))
+                face = lbxDHand.Items[_DhandIndex].ToString();                                 
+                int temp = int.Parse(lblDealCardScoreTxt.Text); 
+                
+                if (face.Contains("S")) // <---                <---                <---  // Ace                                                        
                 {
-                    _draw = drawImgDeck(face);
-                    makeCard(_draw, _D);
+                    /*Imaging*/// <---                <---        // Applies an image based on the Id Key
+                    _draw = drawImgDeck(face);                                                 
+                    makeCard(_draw, _D);                                                       
 
-                    face = "11";
-                    score = 11;
+                    face = "11";                                                               
+                    score = 11;                                                                
 
-                    if (temp > 11 && face == "11")
+                    if (temp > 11 && face == "11")                                             
                     {
                         score = 1;
                     }
 
                 }
-                else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))
+                else if (face.Contains("J") || face.Contains("Q") || face.Contains("K"))// Jack / Queen / King
                 {
                     _draw = drawImgDeck(face);
                     makeCard(_draw, _D);
@@ -757,7 +763,7 @@ namespace BlackJack_TWO_Solution
                     face = "10";
                     score = 10;
                 }
-                else
+                else // <---                <---                <---                <---// Family cards (2-10)
                 {
                     _draw = drawImgDeck(face);
                     makeCard(_draw, _D);
@@ -793,7 +799,6 @@ namespace BlackJack_TWO_Solution
             lblDDeclaration2.Text = "Your LOSS";
             lblDDeclaration2.ForeColor = Color.Red;
         }
-
         public void Loss(int a)
         {
             lblPDeclaration1.Visible = true;
@@ -813,37 +818,18 @@ namespace BlackJack_TWO_Solution
             lblDDeclaration2.ForeColor = Color.Green;            
         }
 
+        //Builds operator names
         public void namePlayer()
         {
             lblPNameTxt.Text = tbxPName.Text;
             lblPlayerName.Text = lblPNameTxt.Text;   
         }
-
         public void nameDealer()
         {
             lblDNameTxt.Text = tbxDName.Text;
             lblDealerName.Text = lblDNameTxt.Text;
 
         }
-
-        public void clearNameField()
-        {
-            pnlInputField.Visible = false;
-            btnContinue.Visible = false;
-            btnContinue.Enabled = false;
-            tbxDName.Visible = false;
-            tbxDName.Enabled = false;
-            tbxPName.Visible = false;
-            tbxPName.Enabled = false;
-            lblPNameTxt.Visible = false;
-            lblDNameTxt.Visible = false;
-            lblPNameInput.Visible = false;
-            lblDNameInput.Visible = false;
-            lblNameInputTitle.Visible = false;
-            lblNameFlavor.Visible = false;
-            btnNewMatch.Visible = true;
-        }
-
 
         #endregion
 

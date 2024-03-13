@@ -109,7 +109,7 @@
             this.mnuFile});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(1177, 28);
+            this.mnuMain.Size = new System.Drawing.Size(1177, 30);
             this.mnuMain.TabIndex = 0;
             this.mnuMain.Text = "menuStrip1";
             // 
@@ -120,7 +120,7 @@
             this.mnuFileReset,
             this.mnuExit});
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(46, 24);
+            this.mnuFile.Size = new System.Drawing.Size(46, 26);
             this.mnuFile.Text = "File";
             // 
             // mnuFileNew
@@ -159,9 +159,9 @@
             this.pnlBlackJackField.Controls.Add(this.btnHit);
             this.pnlBlackJackField.Controls.Add(this.pnlPlayerField);
             this.pnlBlackJackField.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 28);
+            this.pnlBlackJackField.Location = new System.Drawing.Point(0, 30);
             this.pnlBlackJackField.Name = "pnlBlackJackField";
-            this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 595);
+            this.pnlBlackJackField.Size = new System.Drawing.Size(1177, 593);
             this.pnlBlackJackField.TabIndex = 1;
             // 
             // pnlInputField
@@ -198,7 +198,7 @@
             this.lblDNameInput.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lblDNameInput.Location = new System.Drawing.Point(84, 182);
             this.lblDNameInput.Name = "lblDNameInput";
-            this.lblDNameInput.Size = new System.Drawing.Size(339, 59);
+            this.lblDNameInput.Size = new System.Drawing.Size(271, 47);
             this.lblDNameInput.TabIndex = 38;
             this.lblDNameInput.Text = "Player Name:";
             // 
@@ -217,7 +217,7 @@
             this.lblPNameInput.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lblPNameInput.Location = new System.Drawing.Point(84, 81);
             this.lblPNameInput.Name = "lblPNameInput";
-            this.lblPNameInput.Size = new System.Drawing.Size(346, 59);
+            this.lblPNameInput.Size = new System.Drawing.Size(277, 47);
             this.lblPNameInput.TabIndex = 36;
             this.lblPNameInput.Text = "Dealer Name:";
             // 
