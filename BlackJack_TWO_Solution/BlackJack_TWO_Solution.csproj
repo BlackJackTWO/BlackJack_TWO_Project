@@ -54,163 +54,163 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="bin\Debug\PNG-cards\AA10.png">
+    <Content Include="PNG-cards\AA10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AA2.png">
+    <Content Include="PNG-cards\AA2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AA3.png">
+    <Content Include="PNG-cards\AA3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AA4.png">
+    <Content Include="PNG-cards\AA4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AA5.png">
+    <Content Include="PNG-cards\AA5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AA6.png">
+    <Content Include="PNG-cards\AA6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AA7.png">
+    <Content Include="PNG-cards\AA7.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AA8.png">
+    <Content Include="PNG-cards\AA8.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AA9.png">
+    <Content Include="PNG-cards\AA9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AJ10.png">
+    <Content Include="PNG-cards\AJ10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AK10.png">
+    <Content Include="PNG-cards\AK10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AQ10.png">
+    <Content Include="PNG-cards\AQ10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\AS11.png">
+    <Content Include="PNG-cards\AS11.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB10.png">
+    <Content Include="PNG-cards\BB10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB2.png">
+    <Content Include="PNG-cards\BB2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB3.png">
+    <Content Include="PNG-cards\BB3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB4.png">
+    <Content Include="PNG-cards\BB4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB5.png">
+    <Content Include="PNG-cards\BB5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB6.png">
+    <Content Include="PNG-cards\BB6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB7.png">
+    <Content Include="PNG-cards\BB7.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB8.png">
+    <Content Include="PNG-cards\BB8.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BB9.png">
+    <Content Include="PNG-cards\BB9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BJ10.png">
+    <Content Include="PNG-cards\BJ10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BK10.png">
+    <Content Include="PNG-cards\BK10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BQ10.png">
+    <Content Include="PNG-cards\BQ10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\BS11.png">
+    <Content Include="PNG-cards\BS11.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC10.png">
+    <Content Include="PNG-cards\CC10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC2.png">
+    <Content Include="PNG-cards\CC2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC3.png">
+    <Content Include="PNG-cards\CC3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC4.png">
+    <Content Include="PNG-cards\CC4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC5.png">
+    <Content Include="PNG-cards\CC5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC6.png">
+    <Content Include="PNG-cards\CC6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC7.png">
+    <Content Include="PNG-cards\CC7.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC8.png">
+    <Content Include="PNG-cards\CC8.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CC9.png">
+    <Content Include="PNG-cards\CC9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CJ10.png">
+    <Content Include="PNG-cards\CJ10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CK10.png">
+    <Content Include="PNG-cards\CK10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CQ10.png">
+    <Content Include="PNG-cards\CQ10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\CS11.png">
+    <Content Include="PNG-cards\CS11.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD10.png">
+    <Content Include="PNG-cards\DD10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD2.png">
+    <Content Include="PNG-cards\DD2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD3.png">
+    <Content Include="PNG-cards\DD3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD4.png">
+    <Content Include="PNG-cards\DD4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD5.png">
+    <Content Include="PNG-cards\DD5.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD6.png">
+    <Content Include="PNG-cards\DD6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD7.png">
+    <Content Include="PNG-cards\DD7.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD8.png">
+    <Content Include="PNG-cards\DD8.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DD9.png">
+    <Content Include="PNG-cards\DD9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DJ10.png">
+    <Content Include="PNG-cards\DJ10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DK10.png">
+    <Content Include="PNG-cards\DK10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DQ10.png">
+    <Content Include="PNG-cards\DQ10.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\DS11.png">
+    <Content Include="PNG-cards\DS11.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bin\Debug\PNG-cards\PlamentCard.png">
+    <Content Include="PNG-cards\PlamentCard.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TextFile1.txt" />
@@ -316,7 +316,7 @@
     <Content Include="Resources\PlamentCard.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PNG-cards\" />
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

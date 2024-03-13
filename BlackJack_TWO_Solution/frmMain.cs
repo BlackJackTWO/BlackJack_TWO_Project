@@ -32,7 +32,7 @@ namespace BlackJack_TWO_Solution
         private int _Wins;
         private int _Loss;
 
-        public const string imgPath = @"PNG-cards/";
+        public const string imgPath = @"./PNG-cards/";
 
         #endregion
 
@@ -453,11 +453,11 @@ namespace BlackJack_TWO_Solution
                     }
                 } while (lbxPHand.Items.Count > 0 && lbxPHand.Items.Count <= 5);
 
-                picPlayCard1.Image = Image.FromFile(Resources.PlamentCard.ToString());
-                picPlayCard2.Image = Image.FromFile(Resources.PlamentCard.ToString());
-                picPlayCard3.Image = Image.FromFile(Resources.PlamentCard.ToString());
-                picPlayCard4.Image = Image.FromFile(Resources.PlamentCard.ToString());
-                picPlayCard5.Image = Image.FromFile(Resources.PlamentCard.ToString());
+                picPlayCard1.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picPlayCard2.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picPlayCard3.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picPlayCard4.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picPlayCard5.Image = Image.FromFile(imgPath + "PlamentCard.png");
             }
 
             if (a == "Dealer")
@@ -471,11 +471,11 @@ namespace BlackJack_TWO_Solution
                     }
                 } while (lbxDHand.Items.Count > 0 && lbxDHand.Items.Count <= 5);
 
-                picDealCard1.Image = Image.FromFile(Resources.PlamentCard.ToString());
-                picDealCard2.Image = Image.FromFile(Resources.PlamentCard.ToString());
-                picDealCard3.Image = Image.FromFile(Resources.PlamentCard.ToString());
-                picDealCard4.Image = Image.FromFile(Resources.PlamentCard.ToString());
-                picDealCard5.Image = Image.FromFile(Resources.PlamentCard.ToString());
+                picDealCard1.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picDealCard2.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picDealCard3.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picDealCard4.Image = Image.FromFile(imgPath + "PlamentCard.png");
+                picDealCard5.Image = Image.FromFile(imgPath + "PlamentCard.png");
             }
 
         }
@@ -570,24 +570,24 @@ namespace BlackJack_TWO_Solution
             {
                 if (_PhandIndex == 0)
                 {
-                    picPlayCard1.Image = Image.FromFile(a);
+                    picPlayCard1.Image = Image.FromFile(imgPath + a);
                     
                 }
                 if (_PhandIndex == 1)
                 {
-                    picPlayCard2.Image = Image.FromFile(a);
+                    picPlayCard2.Image = Image.FromFile(imgPath + a);
                 }
                 if (_PhandIndex == 2)
                 {
-                    picPlayCard3.Image = Image.FromFile(a);
+                    picPlayCard3.Image = Image.FromFile(imgPath + a);
                 }
                 if (_PhandIndex == 3)
                 {
-                    picPlayCard4.Image = Image.FromFile(a);
+                    picPlayCard4.Image = Image.FromFile(imgPath + a);
                 }
                 if (_PhandIndex == 4)
                 {
-                    picPlayCard5.Image = Image.FromFile(a);
+                    picPlayCard5.Image = Image.FromFile(imgPath + a);
                 }
 
             }
@@ -595,23 +595,23 @@ namespace BlackJack_TWO_Solution
             {
                 if(_DhandIndex == 0)
                 {
-                   picDealCard1.Image = Image.FromFile(a);
+                   picDealCard1.Image = Image.FromFile(imgPath + a);
                 }
                 if (_DhandIndex == 1)
                 {
-                    picDealCard2.Image = Image.FromFile(a);
+                    picDealCard2.Image = Image.FromFile(imgPath + a);
                 }
                 if (_DhandIndex == 2)
                 {
-                    picDealCard3.Image = Image.FromFile(a);
+                    picDealCard3.Image = Image.FromFile(imgPath + a);
                 }
                 if (_DhandIndex == 3)
                 {
-                    picDealCard4.Image = Image.FromFile(a);
+                    picDealCard4.Image = Image.FromFile(imgPath + a);
                 }
                 if (_DhandIndex == 4)
                 {
-                    picDealCard5.Image = Image.FromFile(a);
+                    picDealCard5.Image = Image.FromFile(imgPath + a);
                 }
             }
         }
