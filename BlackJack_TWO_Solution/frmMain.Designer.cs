@@ -56,11 +56,6 @@
             this.pnlDealerScore = new System.Windows.Forms.Panel();
             this.lblDealCardScoreTxt = new System.Windows.Forms.Label();
             this.lblDeaCardScoreTitle = new System.Windows.Forms.Label();
-            this.picDealCard5 = new System.Windows.Forms.PictureBox();
-            this.picDealCard4 = new System.Windows.Forms.PictureBox();
-            this.picDealCard3 = new System.Windows.Forms.PictureBox();
-            this.picDealCard2 = new System.Windows.Forms.PictureBox();
-            this.picDealCard1 = new System.Windows.Forms.PictureBox();
             this.pnlDealerRound = new System.Windows.Forms.Panel();
             this.lblDealRoundScr = new System.Windows.Forms.Label();
             this.lblDealRoundTitle = new System.Windows.Forms.Label();
@@ -72,33 +67,38 @@
             this.pnlPlayerField = new System.Windows.Forms.Panel();
             this.lblPDeclaration1 = new System.Windows.Forms.Label();
             this.lblPDeclaration2 = new System.Windows.Forms.Label();
-            this.picPlayCard5 = new System.Windows.Forms.PictureBox();
-            this.picPlayCard4 = new System.Windows.Forms.PictureBox();
-            this.picPlayCard3 = new System.Windows.Forms.PictureBox();
-            this.picPlayCard2 = new System.Windows.Forms.PictureBox();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.pnlPlayerScore = new System.Windows.Forms.Panel();
             this.lblPlayCardScoreTxt = new System.Windows.Forms.Label();
             this.lblPlayCardScoreTitle = new System.Windows.Forms.Label();
+            this.picDealCard5 = new System.Windows.Forms.PictureBox();
+            this.picDealCard4 = new System.Windows.Forms.PictureBox();
+            this.picDealCard3 = new System.Windows.Forms.PictureBox();
+            this.picDealCard2 = new System.Windows.Forms.PictureBox();
+            this.picDealCard1 = new System.Windows.Forms.PictureBox();
+            this.picPlayCard5 = new System.Windows.Forms.PictureBox();
+            this.picPlayCard4 = new System.Windows.Forms.PictureBox();
+            this.picPlayCard3 = new System.Windows.Forms.PictureBox();
+            this.picPlayCard2 = new System.Windows.Forms.PictureBox();
             this.picPlayCard1 = new System.Windows.Forms.PictureBox();
             this.mnuMain.SuspendLayout();
             this.pnlBlackJackField.SuspendLayout();
             this.pnlInputField.SuspendLayout();
             this.pnlDealerField.SuspendLayout();
             this.pnlDealerScore.SuspendLayout();
+            this.pnlDealerRound.SuspendLayout();
+            this.pnlPlayerRound.SuspendLayout();
+            this.pnlPlayerField.SuspendLayout();
+            this.pnlPlayerScore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDealCard5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDealCard4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDealCard3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDealCard2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDealCard1)).BeginInit();
-            this.pnlDealerRound.SuspendLayout();
-            this.pnlPlayerRound.SuspendLayout();
-            this.pnlPlayerField.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard2)).BeginInit();
-            this.pnlPlayerScore.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,6 +166,7 @@
             // 
             // pnlInputField
             // 
+            this.pnlInputField.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pnlInputField.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlInputField.Controls.Add(this.lblPNameTxt);
             this.pnlInputField.Controls.Add(this.lblDNameInput);
@@ -448,56 +449,6 @@
             this.lblDeaCardScoreTitle.TabIndex = 0;
             this.lblDeaCardScoreTitle.Text = "Score: ";
             // 
-            // picDealCard5
-            // 
-            this.picDealCard5.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard5.Image")));
-            this.picDealCard5.Location = new System.Drawing.Point(404, 122);
-            this.picDealCard5.Name = "picDealCard5";
-            this.picDealCard5.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard5.TabIndex = 29;
-            this.picDealCard5.TabStop = false;
-            // 
-            // picDealCard4
-            // 
-            this.picDealCard4.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard4.Image")));
-            this.picDealCard4.Location = new System.Drawing.Point(312, 122);
-            this.picDealCard4.Name = "picDealCard4";
-            this.picDealCard4.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard4.TabIndex = 28;
-            this.picDealCard4.TabStop = false;
-            // 
-            // picDealCard3
-            // 
-            this.picDealCard3.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard3.Image")));
-            this.picDealCard3.Location = new System.Drawing.Point(219, 121);
-            this.picDealCard3.Name = "picDealCard3";
-            this.picDealCard3.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard3.TabIndex = 27;
-            this.picDealCard3.TabStop = false;
-            // 
-            // picDealCard2
-            // 
-            this.picDealCard2.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard2.Image")));
-            this.picDealCard2.Location = new System.Drawing.Point(124, 122);
-            this.picDealCard2.Name = "picDealCard2";
-            this.picDealCard2.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard2.TabIndex = 26;
-            this.picDealCard2.TabStop = false;
-            // 
-            // picDealCard1
-            // 
-            this.picDealCard1.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard1.Image")));
-            this.picDealCard1.Location = new System.Drawing.Point(28, 122);
-            this.picDealCard1.Name = "picDealCard1";
-            this.picDealCard1.Size = new System.Drawing.Size(131, 196);
-            this.picDealCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDealCard1.TabIndex = 25;
-            this.picDealCard1.TabStop = false;
-            // 
             // pnlDealerRound
             // 
             this.pnlDealerRound.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -624,46 +575,6 @@
             this.lblPDeclaration2.Text = "Your Loss";
             this.lblPDeclaration2.Visible = false;
             // 
-            // picPlayCard5
-            // 
-            this.picPlayCard5.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard5.Image")));
-            this.picPlayCard5.Location = new System.Drawing.Point(26, 124);
-            this.picPlayCard5.Name = "picPlayCard5";
-            this.picPlayCard5.Size = new System.Drawing.Size(131, 196);
-            this.picPlayCard5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPlayCard5.TabIndex = 24;
-            this.picPlayCard5.TabStop = false;
-            // 
-            // picPlayCard4
-            // 
-            this.picPlayCard4.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard4.Image")));
-            this.picPlayCard4.Location = new System.Drawing.Point(121, 125);
-            this.picPlayCard4.Name = "picPlayCard4";
-            this.picPlayCard4.Size = new System.Drawing.Size(131, 196);
-            this.picPlayCard4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPlayCard4.TabIndex = 23;
-            this.picPlayCard4.TabStop = false;
-            // 
-            // picPlayCard3
-            // 
-            this.picPlayCard3.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard3.Image")));
-            this.picPlayCard3.Location = new System.Drawing.Point(214, 125);
-            this.picPlayCard3.Name = "picPlayCard3";
-            this.picPlayCard3.Size = new System.Drawing.Size(131, 196);
-            this.picPlayCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPlayCard3.TabIndex = 22;
-            this.picPlayCard3.TabStop = false;
-            // 
-            // picPlayCard2
-            // 
-            this.picPlayCard2.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard2.Image")));
-            this.picPlayCard2.Location = new System.Drawing.Point(307, 125);
-            this.picPlayCard2.Name = "picPlayCard2";
-            this.picPlayCard2.Size = new System.Drawing.Size(131, 196);
-            this.picPlayCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPlayCard2.TabIndex = 21;
-            this.picPlayCard2.TabStop = false;
-            // 
             // lblPlayerName
             // 
             this.lblPlayerName.AutoSize = true;
@@ -706,6 +617,97 @@
             this.lblPlayCardScoreTitle.TabIndex = 0;
             this.lblPlayCardScoreTitle.Text = "Score: ";
             // 
+            // picDealCard5
+            // 
+            this.picDealCard5.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard5.Image")));
+            this.picDealCard5.Location = new System.Drawing.Point(404, 122);
+            this.picDealCard5.Name = "picDealCard5";
+            this.picDealCard5.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard5.TabIndex = 29;
+            this.picDealCard5.TabStop = false;
+            // 
+            // picDealCard4
+            // 
+            this.picDealCard4.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard4.Image")));
+            this.picDealCard4.Location = new System.Drawing.Point(312, 122);
+            this.picDealCard4.Name = "picDealCard4";
+            this.picDealCard4.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard4.TabIndex = 28;
+            this.picDealCard4.TabStop = false;
+            // 
+            // picDealCard3
+            // 
+            this.picDealCard3.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard3.Image")));
+            this.picDealCard3.Location = new System.Drawing.Point(219, 121);
+            this.picDealCard3.Name = "picDealCard3";
+            this.picDealCard3.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard3.TabIndex = 27;
+            this.picDealCard3.TabStop = false;
+            // 
+            // picDealCard2
+            // 
+            this.picDealCard2.Image = ((System.Drawing.Image)(resources.GetObject("picDealCard2.Image")));
+            this.picDealCard2.Location = new System.Drawing.Point(124, 122);
+            this.picDealCard2.Name = "picDealCard2";
+            this.picDealCard2.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard2.TabIndex = 26;
+            this.picDealCard2.TabStop = false;
+            // 
+            // picDealCard1
+            // 
+            this.picDealCard1.ErrorImage = null;
+            this.picDealCard1.Image = global::BlackJack_TWO_Solution.Properties.Resources.PlamentCard1;
+            this.picDealCard1.Location = new System.Drawing.Point(28, 122);
+            this.picDealCard1.Name = "picDealCard1";
+            this.picDealCard1.Size = new System.Drawing.Size(131, 196);
+            this.picDealCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDealCard1.TabIndex = 25;
+            this.picDealCard1.TabStop = false;
+            // 
+            // picPlayCard5
+            // 
+            this.picPlayCard5.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard5.Image")));
+            this.picPlayCard5.Location = new System.Drawing.Point(26, 124);
+            this.picPlayCard5.Name = "picPlayCard5";
+            this.picPlayCard5.Size = new System.Drawing.Size(131, 196);
+            this.picPlayCard5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPlayCard5.TabIndex = 24;
+            this.picPlayCard5.TabStop = false;
+            // 
+            // picPlayCard4
+            // 
+            this.picPlayCard4.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard4.Image")));
+            this.picPlayCard4.Location = new System.Drawing.Point(121, 125);
+            this.picPlayCard4.Name = "picPlayCard4";
+            this.picPlayCard4.Size = new System.Drawing.Size(131, 196);
+            this.picPlayCard4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPlayCard4.TabIndex = 23;
+            this.picPlayCard4.TabStop = false;
+            // 
+            // picPlayCard3
+            // 
+            this.picPlayCard3.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard3.Image")));
+            this.picPlayCard3.Location = new System.Drawing.Point(214, 125);
+            this.picPlayCard3.Name = "picPlayCard3";
+            this.picPlayCard3.Size = new System.Drawing.Size(131, 196);
+            this.picPlayCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPlayCard3.TabIndex = 22;
+            this.picPlayCard3.TabStop = false;
+            // 
+            // picPlayCard2
+            // 
+            this.picPlayCard2.Image = ((System.Drawing.Image)(resources.GetObject("picPlayCard2.Image")));
+            this.picPlayCard2.Location = new System.Drawing.Point(307, 125);
+            this.picPlayCard2.Name = "picPlayCard2";
+            this.picPlayCard2.Size = new System.Drawing.Size(131, 196);
+            this.picPlayCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPlayCard2.TabIndex = 21;
+            this.picPlayCard2.TabStop = false;
+            // 
             // picPlayCard1
             // 
             this.picPlayCard1.Image = global::BlackJack_TWO_Solution.Properties.Resources.PlamentCard;
@@ -740,23 +742,23 @@
             this.pnlDealerField.PerformLayout();
             this.pnlDealerScore.ResumeLayout(false);
             this.pnlDealerScore.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDealCard1)).EndInit();
             this.pnlDealerRound.ResumeLayout(false);
             this.pnlDealerRound.PerformLayout();
             this.pnlPlayerRound.ResumeLayout(false);
             this.pnlPlayerRound.PerformLayout();
             this.pnlPlayerField.ResumeLayout(false);
             this.pnlPlayerField.PerformLayout();
+            this.pnlPlayerScore.ResumeLayout(false);
+            this.pnlPlayerScore.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDealCard1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard2)).EndInit();
-            this.pnlPlayerScore.ResumeLayout(false);
-            this.pnlPlayerScore.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPlayCard1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

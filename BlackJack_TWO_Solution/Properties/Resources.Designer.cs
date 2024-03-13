@@ -589,5 +589,15 @@ namespace BlackJack_TWO_Solution.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PlamentCard1 {
+            get {
+                object obj = ResourceManager.GetObject("PlamentCard1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
